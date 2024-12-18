@@ -1,7 +1,8 @@
 {
-  "name": "henriquesenadev-postfolio",
+  "name": "henriquesenadev-portfolio",
   "version": "0.1.0",
   "private": true,
+  "author": "HenriqueSenaDev",
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
