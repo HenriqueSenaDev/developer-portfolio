@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { OutfitFontFamily } from "./assets/fonts";
+import { OutfitFontFamily } from "../assets/fonts";
 import "@/styles/globals.css";
 
 export const metadata: Metadata = {
