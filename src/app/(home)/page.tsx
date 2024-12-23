@@ -1,6 +1,7 @@
 import Header from "./header";
 import { Hero } from "./hero";
 import { TechsFlow } from "./techs-flow";
+import { About } from "./about";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <Header />
       <Hero />
       <TechsFlow />
+      <About />
     </div>
   );
 }
