@@ -74,7 +74,7 @@ export const TechsFlow = () => {
   return (
     <div
       id="tech-flows-container"
-      className="w-full overflow-hidden bg-primary h-[52px] flex items-center px-[32px] gap-[32px]"
+      className="sticky top-0 w-full overflow-hidden bg-primary h-[52px] flex items-center px-[32px] gap-[32px]"
     >
       {techs.map((TechIcon, index) => (
         <TechIcon

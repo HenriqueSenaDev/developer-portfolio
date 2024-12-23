@@ -19,7 +19,7 @@ export const Hero = () => {
               Desenvolva com{" "}
               <TextLoop className="text-primary" interval={3000}>
                 <strong>eficiência</strong>
-                <strong>agilidade</strong>
+                <strong>inovação</strong>
                 <strong>confiança</strong>
               </TextLoop>
             </h1>
@@ -34,7 +34,7 @@ export const Hero = () => {
             </h3>
           </div>
 
-          <p className="text-sm font-light">
+          <p className="text-[14.5px] font-light">
             Desenvolvedor Full-Stack capacitado e independente. Aprimore seu
             negócio com as funcionalidades mais modernas e sofisticadas do
             mercado.
@@ -42,11 +42,14 @@ export const Hero = () => {
         </div>
 
         <div className="flex flex-wrap gap-x-3 gap-y-2">
-          <Button className="h-9 px-3 gap-[6px] text-xs">
+          <Button className="h-9 px-3 gap-[6px] text-[13px]">
             <PickaxeIcon />O que posso construir
           </Button>
 
-          <Button variant="secondary" className="h-9 px-3 gap-[6px] text-xs">
+          <Button
+            variant="secondary"
+            className="h-9 px-3 gap-[6px] text-[13px]"
+          >
             <MessageSquareIcon />
             Entre em contato
           </Button>
