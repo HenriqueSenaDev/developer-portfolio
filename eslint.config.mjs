@@ -16,6 +16,11 @@ const eslintConfig = [
   js.configs.recommended,
   ...compat.extends("next/core-web-vitals", "next/typescript"),
   eslintPluginPrettierRecommended, // must be last item
+  {
+    rules: {
+      "react-hooks/exhaustive-deps": "off",
+    },
+  },
 ];
 
 export default eslintConfig;

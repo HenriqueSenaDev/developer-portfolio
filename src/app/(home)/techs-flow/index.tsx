@@ -25,8 +25,14 @@ const orderedTechIcons: React.FC<TechIconProps>[] = [
 ];
 
 export const TechsFlow = () => {
-  const [techs, setTechs] =
-    useState<React.FC<TechIconProps>[]>(orderedTechIcons);
+  const [techs, setTechs] = useState<React.FC<TechIconProps>[]>([
+    // Initial quantity before screen-based calculation.
+    ...orderedTechIcons,
+    ...orderedTechIcons,
+    ...orderedTechIcons,
+    ...orderedTechIcons,
+    ...orderedTechIcons,
+  ]);
 
   const lastIndex = useRef<number>(0);
 
@@ -50,20 +56,18 @@ export const TechsFlow = () => {
 
     if (!firstTech || !containerElement) return;
 
-    // Observer instance
-    const options = {
-      root: containerElement,
-      rootMargin: "0px", // Margin around the root
-      threshold: 0, // Threshold at which callback is triggered
-    };
-
     const callback: IntersectionObserverCallback = (entries) => {
       entries.forEach((entry) => {
         if (!entry.isIntersecting) handleTechOut();
       });
     };
 
-    const observer = new IntersectionObserver(callback, options);
+    const observer = new IntersectionObserver(callback, {
+      root: containerElement,
+      rootMargin: "0px",
+      threshold: 0,
+    });
+
     observer.observe(firstTech);
   }, [techs]);
 
