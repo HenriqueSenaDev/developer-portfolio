@@ -54,6 +54,7 @@ export const Hero = () => {
       </div>
 
       <Image
+        priority
         className="w-full max-w-[232px] h-auto mx-auto mt-8"
         // ! temporary alternative description
         alt="temporary alternative"

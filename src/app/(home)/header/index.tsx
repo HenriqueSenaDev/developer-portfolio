@@ -8,7 +8,7 @@ const Header = () => {
       <div className="flex items-center gap-2">
         <RocketIcon className="flex-shrink-0 size-5" strokeWidth={1.5} />
 
-        <span className="text-sm min-[390px]:text-base">
+        <span className="text-sm min-[360px]:text-base">
           Luiz Henrique Sena
         </span>
       </div>
