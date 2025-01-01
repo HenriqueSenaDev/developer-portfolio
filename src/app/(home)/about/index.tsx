@@ -23,7 +23,7 @@ const tagsContent: { Icon: React.FC; description: string }[] = [
     Icon: () => (
       <GraduationCapIcon className="size-5 flex-shrink-0" strokeWidth={1.5} />
     ),
-    description: "Técnico em Informática por Escola Profissionalizante",
+    description: "Técnico em Informática por Escola Profissionalizante.",
   },
   {
     Icon: () => (
@@ -33,13 +33,13 @@ const tagsContent: { Icon: React.FC; description: string }[] = [
         fill="white"
       />
     ),
-    description: "Insígnia AWS Academy Cloud Foundations",
+    description: "Insígnia AWS Academy Cloud Foundations.",
   },
   {
     Icon: () => (
       <MedalIcon className="size-5 flex-shrink-0" strokeWidth={1.5} />
     ),
-    description: "5 medalhas olimpíadas nacionais em Matemática",
+    description: "5 medalhas olímpicas nacionais em Matemática.",
   },
 ];
 
@@ -48,7 +48,7 @@ export const About = () => {
     <section className="flex flex-col px-5 pt-[42px] pb-8 gap-6">
       <div className="flex flex-col gap-y-6">
         <Image
-          className="w-full max-w-[140px] mx-auto"
+          className="w-full max-w-[140px] mx-auto md:max-w-[180px]"
           src={aboutSrcImg}
           // ! temporary alternative
           alt="temporary alternative"
