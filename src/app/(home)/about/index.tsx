@@ -11,7 +11,7 @@ import Image from "next/image";
 
 const autoDescriptionContent: string[] = [
   "Profissional comunicativo e independente com mais de 1 ano na indústria do software.",
-  "Desenvolvedor FullStack Web através das linguagens TypeScript e Java.",
+  "Desenvolvedor Full Stack através das linguagens TypeScript e Java.",
   "Em busca do perfil generalista frontend e especialista backend.",
   "Sempre atualizado nas tecnologias mais modernas e pronto para desafios.",
 ];
@@ -61,7 +61,7 @@ const tagsContent: { Icon: React.FC; description: string }[] = [
 export const About = () => {
   return (
     <section className="flex flex-col px-5 pt-[42px] pb-8 gap-6">
-      <div className="flex flex-col gap-y-6">
+      <div className="flex flex-col gap-y-6 max-w-[calc(576px-40px)] mx-auto">
         <Image
           className="w-full max-w-[140px] mx-auto md:max-w-[180px]"
           src={aboutSrcImg}
@@ -76,7 +76,7 @@ export const About = () => {
         </ul>
       </div>
 
-      <div className="flex flex-col gap-6 items-center">
+      <div className="flex flex-col gap-6 items-center max-w-xl mx-auto">
         <div className="flex flex-col items-start gap-x-3 gap-y-[18px]">
           {tagsContent.map(({ Icon, description }, index) => (
             <div

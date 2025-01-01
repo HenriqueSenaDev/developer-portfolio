@@ -3,7 +3,7 @@ import { GithubIcon, LinkedinIcon, MailIcon } from "lucide-react";
 
 export const Contact = () => {
   return (
-    <section className="flex flex-col items-center text-center my-8 px-5 gap-9">
+    <section className="flex flex-col items-center text-center my-8 px-5 gap-9 max-w-xl mx-auto">
       <h1 className="font-semibold text-lg min-[350px]:text-xl">
         Gostou do que viu? Me deixe sabendo!
       </h1>

@@ -15,7 +15,7 @@ export const Hero = () => {
           <div
             className={`${DMSansFontFamily.className} font-bold leading-tight`}
           >
-            <h1 className="text-xl min-[370px]:text-[26px] md:text-4xl">
+            <h1 className="text-xl min-[360px]:text-2xl min-[385px]:text-[26px] md:text-4xl">
               Desenvolva com{" "}
               <TextLoop className="text-primary" interval={3000}>
                 <strong>eficiência</strong>
@@ -24,7 +24,7 @@ export const Hero = () => {
               </TextLoop>
             </h1>
 
-            <h3 className="text-base min-[370px]:text-xl md:text-2xl">
+            <h3 className="text-base min-[360px]:text-lg min-[385px]:text-xl md:text-2xl">
               software{" "}
               <TextLoop className="text-primary" interval={5000}>
                 <strong>de grande valor.</strong>
@@ -35,9 +35,9 @@ export const Hero = () => {
           </div>
 
           <p className="text-[13px] min-[370px]:text-[14.5px] font-light md:text-base">
-            Desenvolvedor Full-Stack capacitado e independente. Aprimore seu
-            negócio com as funcionalidades mais modernas e sofisticadas do
-            mercado.
+            Aprimore seu negócio com as funcionalidades mais modernas e
+            sofisticadas do mercado com um desenvolvedor capacitado e
+            independente.
           </p>
         </div>
 
