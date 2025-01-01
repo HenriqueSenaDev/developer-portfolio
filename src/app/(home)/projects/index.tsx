@@ -1,6 +1,8 @@
+import { Tech } from "@/types/techs";
 import { ExternalLinkIcon, GithubIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { techImgSrcMap } from "./techs-mapper";
 
 type ProjectDetails = {
   name: string;
@@ -8,6 +10,7 @@ type ProjectDetails = {
   tags: string[];
   githubRepoURL: string;
   productionURL?: string;
+  techs: Tech[];
   images: {
     thumb: string;
   };
@@ -21,6 +24,7 @@ const projects: ProjectDetails[] = [
     githubRepoURL: "https://github.com/HenriqueSenaDev/mind-lab",
     productionURL: "https://mind-lab-frontend.vercel.app/personalization",
     tags: ["theme switcher", "video player", "FAQ"],
+    techs: ["typescript", "react", "vite"],
     images: {
       thumb:
         "https://raw.githubusercontent.com/HenriqueSenaDev/assets/refs/heads/main/mind-lab/theme.png",
@@ -84,6 +88,23 @@ export const Projects = () => {
                     </span>
                   </Link>
                 )}
+              </div>
+
+              <div className="flex flex-wrap gap-x-5 gap-y-3 mt-6">
+                {project.techs.map((tech) => {
+                  const imageMetadata = techImgSrcMap[tech];
+
+                  return (
+                    <Image
+                      key={tech}
+                      className="h-7 w-auto"
+                      src={imageMetadata.src}
+                      height={imageMetadata.height}
+                      width={imageMetadata.width}
+                      alt=""
+                    />
+                  );
+                })}
               </div>
             </div>
           </div>
