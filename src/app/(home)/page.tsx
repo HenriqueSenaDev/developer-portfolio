@@ -3,6 +3,7 @@ import { Hero } from "./hero";
 import { TechsFlow } from "./techs-flow";
 import { About } from "./about";
 import { Projects } from "./projects";
+import { Contact } from "./contact";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <TechsFlow />
       <About />
       <Projects />
+      <Contact />
     </div>
   );
 }
