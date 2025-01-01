@@ -9,13 +9,13 @@ import { MessageSquareIcon, PickaxeIcon } from "lucide-react";
 
 export const Hero = () => {
   return (
-    <section className="flex flex-col px-5 mt-[22px]">
-      <div className="w-full flex flex-col gap-7 max-w-xl mx-auto">
-        <div className="flex flex-col gap-3">
+    <section className="flex flex-col px-5 mt-[22px] lg:flex-row lg:gap-5 lg:max-w-screen-xl lg:mx-auto">
+      <div className="w-full flex flex-col gap-7 mx-auto max-w-xl lg:max-w-2xl lg:mt-10 lg:gap-8">
+        <div className="flex flex-col gap-3 lg:gap-5">
           <div
             className={`${DMSansFontFamily.className} font-bold leading-tight`}
           >
-            <h1 className="text-xl min-[360px]:text-2xl min-[385px]:text-[26px] md:text-4xl">
+            <h1 className="text-xl min-[360px]:text-2xl min-[385px]:text-[26px] md:text-4xl lg:text-5xl">
               Desenvolva com{" "}
               <TextLoop className="text-primary" interval={3000}>
                 <strong>eficiência</strong>
@@ -24,7 +24,7 @@ export const Hero = () => {
               </TextLoop>
             </h1>
 
-            <h3 className="text-base min-[360px]:text-lg min-[385px]:text-xl md:text-2xl">
+            <h3 className="text-base min-[360px]:text-lg min-[385px]:text-xl md:text-2xl lg:text-4xl">
               software{" "}
               <TextLoop className="text-primary" interval={5000}>
                 <strong>de grande valor.</strong>
@@ -34,7 +34,7 @@ export const Hero = () => {
             </h3>
           </div>
 
-          <p className="text-[13px] min-[370px]:text-[14.5px] font-light md:text-base">
+          <p className="text-[13px] min-[370px]:text-[14.5px] font-light md:text-base lg:text-xl">
             Aprimore seu negócio com as funcionalidades mais modernas e
             sofisticadas do mercado com um desenvolvedor capacitado e
             independente.
@@ -42,13 +42,13 @@ export const Hero = () => {
         </div>
 
         <div className="flex flex-wrap gap-x-3 gap-y-2 md:gap-5">
-          <Button className="h-9 px-3 gap-[6px] text-[13px] md:px-4 md:text-sm">
-            <PickaxeIcon />O que posso construir
+          <Button className="h-9 px-3 gap-[6px] text-[13px] md:px-4 md:text-sm lg:h-11 lg:gap-3 lg:px-5 lg:text-base lg:rounded-lg">
+            <PickaxeIcon className="lg:!size-5" />O que posso construir
           </Button>
 
           <Button
             variant="secondary"
-            className="h-9 px-3 gap-[6px] text-[13px] md:px-4 md:text-sm"
+            className="h-9 px-3 gap-[6px] text-[13px] md:px-4 md:text-sm lg:h-11 lg:gap-3 lg:px-5 lg:text-base lg:rounded-lg"
           >
             <MessageSquareIcon />
             Entre em contato
@@ -58,7 +58,7 @@ export const Hero = () => {
 
       <Image
         priority
-        className="w-full max-w-[232px] h-auto mx-auto mt-8 md:max-w-[250px]"
+        className="w-full max-w-[232px] h-auto mx-auto mt-8 md:max-w-[250px] lg:max-w-[300px] lg:mt-0"
         // ! temporary alternative description
         alt="temporary alternative"
         src={heroImgSrc}
