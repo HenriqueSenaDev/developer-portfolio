@@ -1,7 +1,12 @@
 import aboutSrcImg from "@/assets/images/about-personal.png";
 import { AwsIcon } from "@/assets/vectors/tech-icons/aws";
 import { Button } from "@/components/button";
-import { FileTextIcon, GraduationCapIcon, MedalIcon } from "lucide-react";
+import {
+  AwardIcon,
+  FileTextIcon,
+  GraduationCapIcon,
+  MedalIcon,
+} from "lucide-react";
 import Image from "next/image";
 
 const autoDescriptionContent: string[] = [
@@ -40,6 +45,16 @@ const tagsContent: { Icon: React.FC; description: string }[] = [
       <MedalIcon className="size-5 flex-shrink-0" strokeWidth={1.5} />
     ),
     description: "5 medalhas olímpicas nacionais em Matemática.",
+  },
+  {
+    Icon: () => (
+      <AwardIcon
+        className="size-5 flex-shrink-0 max-[530px]:mt-1"
+        strokeWidth={1.5}
+      />
+    ),
+    description:
+      "Bolsa em Iniciação Científica pelo Instituto de Matemática Pura e Aplicada.",
   },
 ];
 
