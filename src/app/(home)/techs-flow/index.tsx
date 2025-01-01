@@ -74,13 +74,13 @@ export const TechsFlow = () => {
   return (
     <div
       id="tech-flows-container"
-      className="sticky top-0 w-full overflow-hidden bg-primary h-[52px] flex items-center px-[32px] gap-[32px]"
+      className="sticky top-0 w-full overflow-hidden bg-primary h-[52px] flex items-center px-[32px] gap-[32px] lg:h-[60px] lg:gap-[36px] lg:px-[36px]"
     >
       {techs.map((TechIcon, index) => (
         <TechIcon
           key={index}
           id={`tech-${index}`}
-          className="flex-shrink-0 size-[22px] fill-tertiary tech-icon-movement"
+          className="flex-shrink-0 size-[22px] fill-tertiary tech-icon-movement lg:size-[26px]"
         />
       ))}
     </div>
