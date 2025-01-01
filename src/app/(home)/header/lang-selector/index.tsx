@@ -12,7 +12,7 @@ export const LanguageSelector = () => {
   return (
     <Select value="pt-BR">
       <SelectTrigger
-        className={`h-9 px-3 py-2 rounded-2xl bg-secondary border-none font-medium text-[11px] ${PlusJakartaSansFontFamily.className}`}
+        className={`${PlusJakartaSansFontFamily.className} h-9 px-3 py-2 rounded-2xl bg-secondary border-none font-medium text-[11px] lg:text-[13px]`}
       >
         <div className="flex items-center gap-[6px]">
           <SelectValue />
