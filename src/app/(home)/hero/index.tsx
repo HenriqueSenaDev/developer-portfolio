@@ -58,7 +58,7 @@ export const Hero = () => {
 
       <Image
         priority
-        className="w-full max-w-[232px] h-auto mx-auto mt-8 md:max-w-[250px] lg:max-w-[300px] lg:mt-0"
+        className="w-full max-w-[232px] translate-y-[2px] h-auto mx-auto mt-8 md:max-w-[250px] lg:max-w-[300px] lg:mt-0"
         // ! temporary alternative description
         alt="temporary alternative"
         src={heroImgSrc}
