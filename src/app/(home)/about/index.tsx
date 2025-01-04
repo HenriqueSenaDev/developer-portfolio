@@ -67,7 +67,10 @@ const tagsContent: { Icon: React.FC; description: string }[] = [
 
 export const About = () => {
   return (
-    <section className="flex flex-col px-5 pt-[42px] pb-8 gap-6 lg:pt-16 lg:gap-14 lg:pb-[76px]">
+    <section
+      id="about"
+      className="flex flex-col px-5 pt-[42px] pb-8 gap-6 lg:pt-16 lg:gap-14 lg:pb-[76px]"
+    >
       <div className="flex flex-col gap-y-6 max-w-[calc(576px-40px)] mx-auto lg:flex-row lg:max-w-screen-xl lg:gap-[100px]">
         <Image
           className="w-full max-w-[140px] mx-auto min-[400px]:max-w-[150px] md:max-w-[180px] lg:max-w-[unset] lg:size-[240px] "

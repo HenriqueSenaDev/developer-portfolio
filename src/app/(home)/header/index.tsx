@@ -1,28 +1,31 @@
+"use client";
+
 import { Button } from "@/components/button";
 import { MenuIcon, RocketIcon } from "lucide-react";
 import { LanguageSelector } from "./lang-selector";
+import { smoothScrollToSection } from "@/utils/dom";
 
 type NavItem = {
   label: string;
-  href: string;
+  id: string;
 };
 
 const navConfig: NavItem[] = [
   {
     label: "Sobre",
-    href: "#about",
+    id: "about",
   },
   {
     label: "Projetos",
-    href: "#projects",
+    id: "projects",
   },
   {
     label: "Habilidades",
-    href: "#abilities",
+    id: "abilities",
   },
   {
     label: "Contato",
-    href: "#contact",
+    id: "contact",
   },
 ];
 
@@ -43,10 +46,11 @@ const Header = () => {
       <div className="flex items-center gap-2 lg:gap-6">
         <nav className="max-lg:hidden">
           <ul className="flex items-center gap-6">
-            {navConfig.map(({ label }) => (
+            {navConfig.map(({ label, id }) => (
               <li
                 key={label}
                 className="transition-all cursor-pointer hover:underline hover:opacity-80 lg:text-[17px]"
+                onClick={() => smoothScrollToSection(id)}
               >
                 {label}
               </li>

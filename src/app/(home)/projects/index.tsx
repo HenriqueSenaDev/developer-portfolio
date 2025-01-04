@@ -34,7 +34,7 @@ const projects: ProjectDetails[] = [
 
 export const Projects = () => {
   return (
-    <section>
+    <section id="projects">
       {projects.map((project, index) => {
         const bgClass = index % 2 === 0 ? "bg-secondary" : "bg-transparent";
 

@@ -11,7 +11,10 @@ export const Contact = () => {
   };
 
   return (
-    <section className="flex flex-col items-center text-center my-8 px-5 gap-9 max-w-xl mx-auto lg:max-w-screen-xl lg:my-16 lg:gap-[42px]">
+    <section
+      id="contact"
+      className="flex flex-col items-center text-center my-8 px-5 gap-9 max-w-xl mx-auto lg:max-w-screen-xl lg:my-16 lg:gap-[42px]"
+    >
       <h1 className="font-semibold text-lg min-[350px]:text-xl lg:text-4xl">
         Gostou do que viu? Me deixe sabendo!
       </h1>
