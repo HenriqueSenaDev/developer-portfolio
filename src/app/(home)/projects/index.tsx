@@ -40,9 +40,9 @@ export const Projects = () => {
 
         return (
           <div key={project.name} className={bgClass}>
-            <div className="flex flex-col py-[42px] px-5 gap-y-6 max-w-xl mx-auto">
+            <div className="flex flex-col py-[42px] px-5 gap-y-6 max-w-xl mx-auto lg:max-w-screen-xl lg:flex-row lg:gap-x-10 lg:py-16 xl:lg:gap-x-12">
               <Image
-                className="rounded-md"
+                className="block h-auto rounded-md lg:max-w-[calc(55%-56px)]"
                 width={1845}
                 height={937}
                 src={project.images.thumb}
@@ -50,15 +50,19 @@ export const Projects = () => {
               />
 
               <div className="flex flex-col">
-                <h2 className="text-[28px] leading-7">{project.name}</h2>
+                <h2 className="text-[28px] leading-7 lg:text-[40px] line-clamp-1 lg:leading-8">
+                  {project.name}
+                </h2>
 
-                <p className="text-base mt-4">{project.description}</p>
+                <p className="text-base mt-4 lg:text-lg lg:leading-6">
+                  {project.description}
+                </p>
 
-                <div className="flex items-center flex-wrap gap-3 mt-4">
+                <div className="flex items-center flex-wrap gap-3 mt-4 lg:mt-[18px]">
                   {project.tags.map((tag) => (
                     <div
                       key={tag}
-                      className="bg-secondary rounded-md py-2 px-4"
+                      className="flex items-center justify-center bg-secondary rounded-md px-4 h-9"
                     >
                       <span className="text-[15px] font-medium">{tag}</span>
                     </div>
@@ -98,7 +102,7 @@ export const Projects = () => {
                     return (
                       <Image
                         key={tech}
-                        className="h-7 w-auto"
+                        className="h-7 w-auto lg:h-[34px]"
                         src={imageMetadata.src}
                         height={imageMetadata.height}
                         width={imageMetadata.width}
