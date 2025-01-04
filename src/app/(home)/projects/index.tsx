@@ -73,7 +73,7 @@ export const Projects = () => {
                   <Link
                     href={project.githubRepoURL}
                     target="_blank"
-                    className="flex items-center gap-[6px]"
+                    className="flex items-center gap-[6px] transition-all hover:opacity-70"
                   >
                     <GithubIcon />
 
@@ -84,7 +84,7 @@ export const Projects = () => {
                     <Link
                       href={project.productionURL}
                       target="_blank"
-                      className="flex items-center gap-[6px]"
+                      className="flex items-center gap-[6px] transition-all hover:opacity-70"
                     >
                       <ExternalLinkIcon />
 

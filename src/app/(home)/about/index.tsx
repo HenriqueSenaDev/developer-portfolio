@@ -95,7 +95,7 @@ export const About = () => {
           ))}
         </div>
 
-        <Button className="py-3 px-[18px] h-[unset] lg:text-[15px] lg:self-start xl:self-center">
+        <Button className="py-3 px-[18px] h-[unset] transition-all hover:opacity-70 lg:text-[15px] lg:self-start xl:self-center">
           <FileTextIcon className="!size-5 flex-shrink-0 lg:!size-[22px]" />
           Baixar Currículo (CV)
         </Button>
