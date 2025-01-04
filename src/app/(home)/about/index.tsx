@@ -8,6 +8,7 @@ import {
   MedalIcon,
 } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 const autoDescriptionContent: string[] = [
   "Profissional comunicativo e independente com mais de 1 ano na indústria do software.",
@@ -95,10 +96,15 @@ export const About = () => {
           ))}
         </div>
 
-        <Button className="py-3 px-[18px] h-[unset] transition-all hover:opacity-70 lg:text-[15px] lg:self-start xl:self-center">
-          <FileTextIcon className="!size-5 flex-shrink-0 lg:!size-[22px]" />
-          Baixar Currículo (CV)
-        </Button>
+        <Link
+          href="https://drive.google.com/drive/folders/1uI2nhcVWRUX4yuAB1W6AlYxOz9uRi3Gq?usp=sharing"
+          target="_blank"
+        >
+          <Button className="py-3 px-[18px] h-[unset] transition-all hover:opacity-70 lg:text-[15px] lg:self-start xl:self-center">
+            <FileTextIcon className="!size-5 flex-shrink-0 lg:!size-[22px]" />
+            Baixar Currículo (CV)
+          </Button>
+        </Link>
       </div>
     </section>
   );
