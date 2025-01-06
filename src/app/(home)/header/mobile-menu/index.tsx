@@ -26,13 +26,23 @@ export const MobileMenu = () => {
   };
 
   useEffect(() => {
-    if (open) setAnimationTrigger(true);
+    if (!open) return document.body.classList.remove("hide-scroll");
 
-    return () => clearTimeout(timeoutRef.current);
+    document.body.classList.add("hide-scroll");
+    setAnimationTrigger(true);
   }, [open]);
 
   useEffect(() => {
     bodyRef.current = document.body;
+
+    if (window) {
+      window.addEventListener("resize", () => {
+        if (document.body.classList.contains("hide-scroll"))
+          document.body.classList.remove("hide-scroll");
+      });
+    }
+
+    return () => clearTimeout(timeoutRef.current);
   }, []);
 
   return (

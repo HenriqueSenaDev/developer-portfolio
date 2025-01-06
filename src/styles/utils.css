@@ -1,0 +1,7 @@
+@tailwind utilities;
+
+@layer utilities {
+  .hide-scroll {
+    @apply overflow-hidden;
+  }
+}

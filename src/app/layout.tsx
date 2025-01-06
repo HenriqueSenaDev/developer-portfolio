@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { OutfitFontFamily } from "../assets/fonts";
 import "@/styles/globals.css";
+import "@/styles/utils.css";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -15,7 +16,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${OutfitFontFamily.className} antialiased h-screen w-screen overflow-hidden`}
+        className={`${OutfitFontFamily.className} antialiased h-screen w-screen overflow-x-hidden overflow-y-auto`}
       >
         {children}
       </body>

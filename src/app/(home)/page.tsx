@@ -9,7 +9,7 @@ import { Footer } from "./footer";
 // TODO: movile navigation, projects feed, project detatils, i18n.
 export default function Home() {
   return (
-    <div className="h-screen pb-10 overflow-y-auto">
+    <div className="min-h-screen pb-10">
       <Header />
       <Hero />
       <TechsFlow />
