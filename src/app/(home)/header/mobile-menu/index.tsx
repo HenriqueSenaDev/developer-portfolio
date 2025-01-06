@@ -15,14 +15,16 @@ export const MobileMenu = () => {
   const bodyRef = useRef<HTMLElement>(undefined);
 
   const handleNavigate = (sectionId: string) => {
-    setAnimationTrigger(false);
-    setOpen(false);
-    smoothScrollToSection(sectionId);
+    handleClose(() => smoothScrollToSection(sectionId));
   };
 
-  const handleClose = () => {
+  const handleClose = (callback?: () => void) => {
     setAnimationTrigger(false);
-    timeoutRef.current = setTimeout(() => setOpen(false), 400);
+
+    timeoutRef.current = setTimeout(() => {
+      setOpen(false);
+      if (callback) callback();
+    }, 400);
   };
 
   useEffect(() => {
@@ -86,7 +88,7 @@ export const MobileMenu = () => {
                 <Button
                   className="size-9 flex-shrink-0 p-0 lg:hidden"
                   variant="ghost"
-                  onClick={handleClose}
+                  onClick={() => handleClose()}
                 >
                   <XIcon />
                 </Button>
