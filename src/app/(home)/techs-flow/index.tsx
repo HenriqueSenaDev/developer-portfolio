@@ -26,7 +26,6 @@ const orderedTechIcons: React.FC<TechIconProps>[] = [
 
 export const TechsFlow = () => {
   const [techs, setTechs] = useState<React.FC<TechIconProps>[]>([
-    // Initial quantity before screen-based calculation.
     ...orderedTechIcons,
     ...orderedTechIcons,
     ...orderedTechIcons,
@@ -74,7 +73,7 @@ export const TechsFlow = () => {
   return (
     <div
       id="tech-flows-container"
-      className="sticky top-0 w-full overflow-hidden bg-primary h-[52px] flex items-center px-[32px] gap-[32px] lg:h-[60px] lg:gap-[36px] lg:px-[36px]"
+      className="w-full overflow-hidden bg-primary h-[52px] flex items-center px-[32px] gap-[32px] lg:h-[60px] lg:gap-[36px] lg:px-[36px]"
     >
       {techs.map((TechIcon, index) => (
         <TechIcon

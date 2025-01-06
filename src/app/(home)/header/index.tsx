@@ -1,16 +1,16 @@
 "use client";
 
-import { Button } from "@/components/button";
-import { MenuIcon, RocketIcon } from "lucide-react";
+import { RocketIcon } from "lucide-react";
 import { LanguageSelector } from "./lang-selector";
 import { smoothScrollToSection } from "@/utils/dom";
+import { MobileMenu } from "./mobile-menu";
 
 type NavItem = {
   label: string;
   id: string;
 };
 
-const navConfig: NavItem[] = [
+export const navConfig: NavItem[] = [
   {
     label: "Sobre",
     id: "about",
@@ -60,9 +60,7 @@ const Header = () => {
 
         <LanguageSelector />
 
-        <Button variant="ghost" className="size-9 flex-shrink-0 p-0 lg:hidden">
-          <MenuIcon className="!size-6" strokeWidth={1.5} />
-        </Button>
+        <MobileMenu />
       </div>
     </header>
   );

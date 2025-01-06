@@ -14,7 +14,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${OutfitFontFamily.className} antialiased`}>
+      <body
+        className={`${OutfitFontFamily.className} antialiased h-screen w-screen overflow-hidden`}
+      >
         {children}
       </body>
     </html>
