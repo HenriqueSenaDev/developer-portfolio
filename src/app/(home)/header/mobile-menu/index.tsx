@@ -1,5 +1,3 @@
-"use client";
-
 import { Button } from "@/components/button";
 import { MenuIcon, RocketIcon, XIcon } from "lucide-react";
 import { navConfig } from "..";
@@ -13,6 +11,8 @@ export const MobileMenu = () => {
   const [animationTrigger, setAnimationTrigger] = useState(false);
 
   const timeoutRef = useRef<NodeJS.Timeout>(undefined);
+
+  const bodyRef = useRef<HTMLElement>(undefined);
 
   const handleNavigate = (sectionId: string) => {
     setAnimationTrigger(false);
@@ -31,6 +31,10 @@ export const MobileMenu = () => {
     return () => clearTimeout(timeoutRef.current);
   }, [open]);
 
+  useEffect(() => {
+    bodyRef.current = document.body;
+  }, []);
+
   return (
     <>
       <Button
@@ -41,59 +45,60 @@ export const MobileMenu = () => {
         <MenuIcon className="!size-6" strokeWidth={1.5} />
       </Button>
 
-      {createPortal(
-        <div
-          className={clsx({
-            "fixed top-0 left-0 right-0 bottom-0 bg-black bg-opacity-50 z-10 lg:hidden":
-              true,
-            hidden: !open,
-          })}
-        >
+      {bodyRef.current &&
+        createPortal(
           <div
             className={clsx({
-              "bg-background size-full ml-[100%] transition-all duration-300":
+              "fixed top-0 left-0 right-0 bottom-0 bg-black bg-opacity-50 z-10 lg:hidden":
                 true,
-              "translate-x-[-100%]": animationTrigger,
+              hidden: !open,
             })}
           >
-            <div className="flex items-center justify-between px-5 py-6">
-              <div className="flex items-center gap-2">
-                <RocketIcon
-                  className="flex-shrink-0 size-5 lg:size-6"
-                  strokeWidth={1.5}
-                />
+            <div
+              className={clsx({
+                "bg-background size-full ml-[100%] transition-all duration-300":
+                  true,
+                "translate-x-[-100%]": animationTrigger,
+              })}
+            >
+              <div className="flex items-center justify-between px-5 py-6">
+                <div className="flex items-center gap-2">
+                  <RocketIcon
+                    className="flex-shrink-0 size-5 lg:size-6"
+                    strokeWidth={1.5}
+                  />
 
-                <span className="font-normal text-sm min-[360px]:text-base">
-                  Luiz Henrique Sena
-                </span>
+                  <span className="font-normal text-sm min-[360px]:text-base">
+                    Luiz Henrique Sena
+                  </span>
+                </div>
+
+                <Button
+                  className="size-9 flex-shrink-0 p-0 lg:hidden"
+                  variant="ghost"
+                  onClick={handleClose}
+                >
+                  <XIcon />
+                </Button>
               </div>
 
-              <Button
-                className="size-9 flex-shrink-0 p-0 lg:hidden"
-                variant="ghost"
-                onClick={handleClose}
-              >
-                <XIcon />
-              </Button>
+              <nav>
+                <ul className="mt-7 flex flex-col items-center gap-6">
+                  {navConfig.map(({ label, id }) => (
+                    <li
+                      key={label}
+                      className="transition-all cursor-pointer hover:underline hover:opacity-80 lg:text-[17px]"
+                      onClick={() => handleNavigate(id)}
+                    >
+                      {label}
+                    </li>
+                  ))}
+                </ul>
+              </nav>
             </div>
-
-            <nav>
-              <ul className="mt-7 flex flex-col items-center gap-6">
-                {navConfig.map(({ label, id }) => (
-                  <li
-                    key={label}
-                    className="transition-all cursor-pointer hover:underline hover:opacity-80 lg:text-[17px]"
-                    onClick={() => handleNavigate(id)}
-                  >
-                    {label}
-                  </li>
-                ))}
-              </ul>
-            </nav>
-          </div>
-        </div>,
-        document.body,
-      )}
+          </div>,
+          bodyRef.current,
+        )}
     </>
   );
 };
