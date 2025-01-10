@@ -1,4 +1,3 @@
-import aboutSrcImg from "@/assets/images/about-personal.png";
 import { AwsIcon } from "@/assets/vectors/tech-icons/aws";
 import { Button } from "@/components/button";
 import {
@@ -7,15 +6,7 @@ import {
   GraduationCapIcon,
   MedalIcon,
 } from "lucide-react";
-import Image from "next/image";
 import Link from "next/link";
-
-const autoDescriptionContent: string[] = [
-  "Profissional comunicativo e independente com mais de 1 ano na indústria do software.",
-  "Desenvolvedor Full Stack através das linguagens TypeScript e Java.",
-  "Em busca do perfil generalista frontend e especialista backend.",
-  "Sempre atualizado nas tecnologias mais modernas e pronto para desafios.",
-];
 
 const tagsContent: { Icon: React.FC; description: string }[] = [
   {
@@ -61,7 +52,7 @@ const tagsContent: { Icon: React.FC; description: string }[] = [
     Icon: () => (
       <MedalIcon className="size-5 flex-shrink-0 lg:size-6" strokeWidth={1.5} />
     ),
-    description: "5 medalhas olímpicas nacionais em Matemática.",
+    description: "4 medalhas olímpicas nacionais em matemática.",
   },
 ];
 
@@ -69,46 +60,62 @@ export const About = () => {
   return (
     <section
       id="about"
-      className="flex flex-col px-5 pt-[42px] pb-8 gap-6 lg:pt-16 lg:gap-14 lg:pb-[76px]"
+      className="flex flex-col gap-6 items-center pb-8 px-5 pt-[42px] mx-auto max-w-xl lg:max-w-screen-xl lg:py-16 lg:gap-10"
     >
-      <div className="flex flex-col gap-y-6 max-w-[calc(576px-40px)] mx-auto lg:flex-row lg:max-w-screen-xl lg:gap-[100px]">
-        <Image
-          className="w-full max-w-[140px] mx-auto min-[400px]:max-w-[150px] md:max-w-[180px] lg:max-w-[unset] lg:size-[240px] "
-          src={aboutSrcImg}
-          // ! temporary alternative
-          alt="temporary alternative"
-        />
+      <div className="w-full flex flex-col gap-6 lg:flex-row lg:gap-12">
+        <div className="flex flex-col gap-y-4 lg:flex-1 lg:max-w-[500px] lg:items-center">
+          <p className="font-light lg:text-lg">
+            Desenvolvedor Full Stack através das linguagens{" "}
+            <strong className="text-primary font-semibold">TypeScript</strong> e{" "}
+            <strong className="text-primary font-semibold">Java</strong>.
+            Profissional comunicativo e independente com mais de 1 ano na
+            indústria do software.
+          </p>
 
-        <ul className="flex flex-col gap-2 list-disc pl-5 text-[15px] lg:text-[19px] lg:font-light lg:max-w-[570px]">
-          {autoDescriptionContent.map((item, index) => (
-            <li key={index}>{item}</li>
-          ))}
-        </ul>
-      </div>
+          <p className="font-light lg:text-lg">
+            Em busca do perfil generalista frontend e especialista backend.
+            Constantemente atualizado sobre as tecnologias mais{" "}
+            <strong className="text-primary font-semibold">modernas</strong> e
+            sempre pronto para{" "}
+            <strong className="text-primary font-semibold">desafios</strong>.
+          </p>
 
-      <div className="flex flex-col gap-6 items-center max-w-xl mx-auto lg:max-w-screen-xl lg:px-7">
-        <div className="flex flex-col items-start gap-x-3 gap-y-[18px] lg:w-full lg:flex-row lg:flex-wrap lg:gap-6">
-          {tagsContent.map(({ Icon, description }, index) => (
-            <div
-              key={index}
-              className="flex items-start w-full bg-secondary rounded-md py-2 px-3 gap-3 text-[13.5px] lg:w-[unset] lg:text-[15px]"
-            >
-              <Icon />
-              <p>{description}</p>
-            </div>
-          ))}
+          <Link
+            href="https://drive.google.com/drive/folders/1uI2nhcVWRUX4yuAB1W6AlYxOz9uRi3Gq?usp=sharing"
+            target="_blank"
+          >
+            <Button className="hidden lg:flex py-3 px-[18px] h-[unset] transition-all hover:opacity-70 mt-3 text-[15px]">
+              <FileTextIcon className="flex-shrink-0 !size-[22px]" />
+              Baixar Currículo (CV)
+            </Button>
+          </Link>
         </div>
 
-        <Link
-          href="https://drive.google.com/drive/folders/1uI2nhcVWRUX4yuAB1W6AlYxOz9uRi3Gq?usp=sharing"
-          target="_blank"
-        >
-          <Button className="py-3 px-[18px] h-[unset] transition-all hover:opacity-70 lg:text-[15px] lg:self-start xl:self-center">
-            <FileTextIcon className="!size-5 flex-shrink-0 lg:!size-[22px]" />
-            Baixar Currículo (CV)
-          </Button>
-        </Link>
+        <div className="flex flex-col gap-6 items-center lg:flex-1">
+          <div className="w-full grid grid-cols-[repeat(auto-fit,minmax(160px,1fr))] gap-3 lg:gap-6 lg:grid-cols-[repeat(auto-fit,minmax(200px,1fr))]">
+            {tagsContent.map(({ Icon, description }, index) => (
+              <div
+                key={index}
+                className="flex items-start w-full bg-white bg-opacity-[8%] rounded-md py-3 px-4 gap-2 transition-all cursor-default border-2 border-transparent hover:border-primary hover:bg-transparent lg:py-4 lg:gap-3"
+              >
+                <Icon />
+
+                <p className="text-[13px] lg:text-[13.5px]">{description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
+
+      <Link
+        href="https://drive.google.com/drive/folders/1uI2nhcVWRUX4yuAB1W6AlYxOz9uRi3Gq?usp=sharing"
+        target="_blank"
+      >
+        <Button className="py-3 px-[18px] h-[unset] transition-all hover:opacity-70 lg:hidden">
+          <FileTextIcon className="!size-5 flex-shrink-0" />
+          Baixar Currículo (CV)
+        </Button>
+      </Link>
     </section>
   );
 };

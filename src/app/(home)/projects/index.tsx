@@ -36,7 +36,8 @@ export const Projects = () => {
   return (
     <section id="projects">
       {projects.map((project, index) => {
-        const bgClass = index % 2 === 0 ? "bg-secondary" : "bg-transparent";
+        const bgClass =
+          index % 2 === 0 ? "bg-white bg-opacity-[8%]" : "bg-transparent";
 
         return (
           <div key={project.name} className={bgClass}>
@@ -62,7 +63,7 @@ export const Projects = () => {
                   {project.tags.map((tag) => (
                     <div
                       key={tag}
-                      className="flex items-center justify-center bg-secondary rounded-md px-4 h-9"
+                      className="flex items-center justify-center bg-white bg-opacity-[8%] rounded-md px-4 h-9"
                     >
                       <span className="text-[15px] font-medium">{tag}</span>
                     </div>
