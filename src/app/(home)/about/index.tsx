@@ -11,10 +11,7 @@ import Link from "next/link";
 const tagsContent: { Icon: React.FC; description: string }[] = [
   {
     Icon: () => (
-      <GraduationCapIcon
-        className="size-5 flex-shrink-0 lg:size-6"
-        strokeWidth={1.5}
-      />
+      <GraduationCapIcon className="size-5 flex-shrink-0" strokeWidth={1.5} />
     ),
     description:
       "Graduando em Engenharia de Software pela Universidade Federal do Ceará.",
@@ -22,7 +19,7 @@ const tagsContent: { Icon: React.FC; description: string }[] = [
   {
     Icon: () => (
       <AwardIcon
-        className="size-5 flex-shrink-0 max-[530px]:mt-1 lg:size-6"
+        className="size-5 flex-shrink-0 max-[530px]:mt-1"
         strokeWidth={1.5}
       />
     ),
@@ -31,17 +28,14 @@ const tagsContent: { Icon: React.FC; description: string }[] = [
   },
   {
     Icon: () => (
-      <GraduationCapIcon
-        className="size-5 flex-shrink-0 lg:size-6"
-        strokeWidth={1.5}
-      />
+      <GraduationCapIcon className="size-5 flex-shrink-0" strokeWidth={1.5} />
     ),
     description: "Técnico em Informática por Escola Profissionalizante.",
   },
   {
     Icon: () => (
       <AwsIcon
-        className="size-5 flex-shrink-0 lg:size-6"
+        className="size-5 flex-shrink-0"
         strokeWidth={1.5}
         fill="white"
       />
@@ -50,7 +44,7 @@ const tagsContent: { Icon: React.FC; description: string }[] = [
   },
   {
     Icon: () => (
-      <MedalIcon className="size-5 flex-shrink-0 lg:size-6" strokeWidth={1.5} />
+      <MedalIcon className="size-5 flex-shrink-0" strokeWidth={1.5} />
     ),
     description: "4 medalhas olímpicas nacionais em matemática.",
   },
@@ -62,8 +56,8 @@ export const About = () => {
       id="about"
       className="flex flex-col gap-6 items-center pb-8 px-5 pt-[42px] mx-auto max-w-xl lg:max-w-screen-xl lg:py-16 lg:gap-10"
     >
-      <div className="w-full flex flex-col gap-6 lg:flex-row lg:gap-12">
-        <div className="flex flex-col gap-y-4 lg:flex-1 lg:max-w-[500px] lg:items-center">
+      <div className="w-full flex flex-col gap-6 lg:flex-row-reverse lg:gap-12">
+        <div className="flex flex-col gap-y-4 lg:flex-1 lg:max-w-[560px] lg:items-center">
           <p className="font-light lg:text-lg">
             Desenvolvedor Full Stack através das linguagens{" "}
             <strong className="text-primary font-semibold">TypeScript</strong> e{" "}
@@ -92,7 +86,7 @@ export const About = () => {
         </div>
 
         <div className="flex flex-col gap-6 items-center lg:flex-1">
-          <div className="w-full grid grid-cols-[repeat(auto-fit,minmax(160px,1fr))] gap-3 lg:gap-6 lg:grid-cols-[repeat(auto-fit,minmax(200px,1fr))]">
+          <div className="w-full grid grid-cols-[repeat(auto-fit,minmax(160px,1fr))] gap-3 lg:gap-6 lg:grid-cols-[repeat(auto-fit,minmax(180px,1fr))]">
             {tagsContent.map(({ Icon, description }, index) => (
               <div
                 key={index}
@@ -100,7 +94,7 @@ export const About = () => {
               >
                 <Icon />
 
-                <p className="text-[13px] lg:text-[13.5px]">{description}</p>
+                <p className="text-[13px] lg:text-[14px]">{description}</p>
               </div>
             ))}
           </div>

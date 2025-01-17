@@ -14,7 +14,7 @@ export const Hero = () => {
       id="hero"
       className="flex flex-col px-5 mt-[22px] lg:flex-row lg:gap-5 lg:max-w-screen-xl lg:mx-auto"
     >
-      <div className="w-full flex flex-col gap-7 mx-auto max-w-xl lg:max-w-2xl lg:mt-10 lg:gap-8">
+      <div className="w-full flex flex-col gap-7 mx-auto max-w-xl lg:mx-0 lg:max-w-2xl lg:mt-10 lg:gap-8">
         <div className="flex flex-col gap-3 lg:gap-5">
           <div
             className={`${DMSansFontFamily.className} font-bold leading-tight`}
