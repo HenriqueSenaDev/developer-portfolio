@@ -5,7 +5,7 @@ import { GithubIcon, LinkedinIcon, MailIcon } from "lucide-react";
 import Link from "next/link";
 
 export const Contact = () => {
-  const copyEmailToClipboard = () => {
+  const handleCopyEmail = () => {
     navigator.clipboard.writeText("acopsenadeveloper@gmail.com");
     alert("Copiado para a clipboard.");
   };
@@ -39,7 +39,7 @@ export const Contact = () => {
 
         <Button
           className="bg-[#B51616] text-xs px-3 font-normal  transition-all hover:bg-[#B51616B2] lg:text-base lg:h-12 lg:px-4 lg:rounded-lg lg:gap-3"
-          onClick={copyEmailToClipboard}
+          onClick={handleCopyEmail}
         >
           <MailIcon className="lg:!size-6" />
           acopsenadeveloper@gmail.com

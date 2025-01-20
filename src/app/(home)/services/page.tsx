@@ -34,9 +34,9 @@ export const Services = () => {
       id="section"
       className="bg-primary flex flex-col items-center pt-8 pb-12 gap-8 lg:pt-14 lg:pb-28 lg:gap-14"
     >
-      <h2 className="text-[44px] font-semibold lg:text-6xl">Serviços</h2>
+      <h2 className="text-[44px] font-semibold lg:text-5xl">Serviços</h2>
 
-      <div className="w-full px-5 grid grid-cols-1 gap-6 max-w-xl lg:max-w-screen-xl lg:grid-cols-[repeat(auto-fit,minmax(160px,1fr))] lg:gap-10 xl:gap-20">
+      <div className="w-full px-5 grid grid-cols-1 gap-6 max-w-xl lg:px-8 lg:max-w-screen-xl lg:grid-cols-[repeat(auto-fit,minmax(160px,1fr))] lg:gap-10 xl:gap-20">
         {serviceCardsContent.map(({ title, description, Icon }, index) => (
           <div
             key={index}
@@ -45,7 +45,7 @@ export const Services = () => {
             <div className="flex items-center gap-2">
               <Icon />
 
-              <h3 className="font-medium text-base lg:text-xl">{title}</h3>
+              <h3 className="font-medium text-base lg:text-lg">{title}</h3>
             </div>
 
             <p className="text-[15px] font-light lg:text-[17px]">

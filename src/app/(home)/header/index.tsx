@@ -31,7 +31,7 @@ export const navConfig: NavItem[] = [
 
 const Header = () => {
   return (
-    <header className="flex items-center justify-between w-full max-w-screen-xl mx-auto p-5 gap-3">
+    <header className="flex items-center justify-between w-full max-w-screen-xl mx-auto p-5 gap-3 px-8">
       <div className="flex items-center gap-2 lg:gap-3">
         <RocketIcon
           className="flex-shrink-0 size-5 lg:size-6"

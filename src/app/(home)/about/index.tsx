@@ -54,7 +54,7 @@ export const About = () => {
   return (
     <section
       id="about"
-      className="flex flex-col gap-6 items-center pb-8 px-5 pt-[42px] mx-auto max-w-xl lg:max-w-screen-xl lg:py-16 lg:gap-10"
+      className="flex flex-col gap-6 items-center pb-8 px-5 pt-[42px] mx-auto max-w-xl lg:max-w-screen-xl lg:py-16 lg:gap-10 lg:px-8"
     >
       <div className="w-full flex flex-col gap-6 lg:flex-row-reverse lg:gap-12">
         <div className="flex flex-col gap-y-4 lg:flex-1 lg:max-w-[560px] lg:items-center">
