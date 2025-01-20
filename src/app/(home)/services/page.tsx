@@ -31,7 +31,7 @@ const serviceCardsContent: ServiceCardContent[] = [
 export const Services = () => {
   return (
     <section
-      id="section"
+      id="services"
       className="bg-primary flex flex-col items-center pt-8 pb-12 gap-8 lg:pt-14 lg:pb-28 lg:gap-14"
     >
       <h2 className="text-[44px] font-semibold lg:text-5xl">Serviços</h2>
