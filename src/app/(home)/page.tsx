@@ -7,7 +7,7 @@ import { Contact } from "./contact";
 import { Footer } from "./footer";
 import { Services } from "./services/page";
 
-// TODO: projects image aspect-ratio, projects feed, project detatils, i18n.
+// TODO: projects image aspect-ratio, i18n.
 export default function Home() {
   return (
     <div className="min-h-screen pb-10">

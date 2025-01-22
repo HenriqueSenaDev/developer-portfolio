@@ -30,6 +30,31 @@ const projects: ProjectDetails[] = [
         "https://raw.githubusercontent.com/HenriqueSenaDev/assets/refs/heads/main/mind-lab/theme.png",
     },
   },
+  {
+    name: "Presenter Web",
+    description:
+      "Gerenciamento de eventos com competições entre equipes e avaliações de jurados, integrado juntamente ao projeto presenter-admin.",
+    githubRepoURL: "https://github.com/HenriqueSenaDev/presenter-web",
+    tags: ["eventos", "competições", "jurados"],
+    techs: ["typescript", "react", "vite", "java", "spring", "jwt", "maven"],
+    images: {
+      thumb:
+        "https://raw.githubusercontent.com/HenriqueSenaDev/assets/refs/heads/main/presenter-web/landing.png",
+    },
+  },
+  {
+    name: "Enem Timer",
+    description:
+      "Ferramenta auxíliar para cronometragem do tempo de questões e redação para estudo de vestibulares. Feedback de desempenho, customização de tempo e modo sem distrações.",
+    githubRepoURL: "https://github.com/HenriqueSenaDev/enem-timer",
+    productionURL: "https://enem-timer.vercel.app/",
+    tags: ["vestibular", "enem", "desempenho"],
+    techs: ["typescript", "react", "tailwindcss", "vite"],
+    images: {
+      thumb:
+        "https://raw.githubusercontent.com/HenriqueSenaDev/assets/refs/heads/main/enem-timer/home.png",
+    },
+  },
 ];
 
 export const Projects = () => {
@@ -65,7 +90,7 @@ export const Projects = () => {
                       key={tag}
                       className="flex items-center justify-center bg-white bg-opacity-[8%] rounded-md px-4 h-9"
                     >
-                      <span className="text-[15px] font-medium">{tag}</span>
+                      <span className="text-[15px]">{tag}</span>
                     </div>
                   ))}
                 </div>
