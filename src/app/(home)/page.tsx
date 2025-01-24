@@ -5,7 +5,7 @@ import { About } from "./about";
 import { Projects } from "./projects";
 import { Contact } from "./contact";
 import { Footer } from "./footer";
-import { Services } from "./services/page";
+import { Services } from "./services";
 
 // TODO: projects image aspect-ratio, i18n.
 export default function Home() {
