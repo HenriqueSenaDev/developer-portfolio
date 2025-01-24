@@ -1,17 +1,19 @@
 import { Button } from "@/components/button";
 import { MenuIcon, RocketIcon, XIcon } from "lucide-react";
-import { navConfig } from "..";
 import { smoothScrollToSection } from "@/utils/dom";
 import { useEffect, useRef, useState } from "react";
 import { createPortal } from "react-dom";
+import { navOptions } from "..";
+import { useTranslations } from "next-intl";
 import clsx from "clsx";
 
 export const MobileMenu = () => {
   const [open, setOpen] = useState<boolean>(false);
   const [animationTrigger, setAnimationTrigger] = useState(false);
 
-  const timeoutRef = useRef<NodeJS.Timeout>(undefined);
+  const i18n = useTranslations("navigation");
 
+  const timeoutRef = useRef<NodeJS.Timeout>(undefined);
   const bodyRef = useRef<HTMLElement>(undefined);
 
   const handleNavigate = (sectionId: string) => {
@@ -96,13 +98,13 @@ export const MobileMenu = () => {
 
               <nav>
                 <ul className="mt-7 flex flex-col items-center gap-6">
-                  {navConfig.map(({ label, id }) => (
+                  {navOptions.map((option) => (
                     <li
-                      key={label}
+                      key={option}
                       className="transition-all cursor-pointer hover:underline hover:opacity-80 lg:text-[17px]"
-                      onClick={() => handleNavigate(id)}
+                      onClick={() => handleNavigate(option)}
                     >
-                      {label}
+                      {i18n(option)}
                     </li>
                   ))}
                 </ul>

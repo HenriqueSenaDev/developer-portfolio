@@ -1,4 +1,4 @@
-import Header from "./header";
+import { Header } from "./header";
 import { Hero } from "./hero";
 import { TechsFlow } from "./techs-flow";
 import { About } from "./about";

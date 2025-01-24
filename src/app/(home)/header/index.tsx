@@ -4,32 +4,18 @@ import { RocketIcon } from "lucide-react";
 import { LanguageSelector } from "./lang-selector";
 import { smoothScrollToSection } from "@/utils/dom";
 import { MobileMenu } from "./mobile-menu";
+import { useTranslations } from "next-intl";
 
-type NavItem = {
-  label: string;
-  id: string;
-};
-
-export const navConfig: NavItem[] = [
-  {
-    label: "Sobre",
-    id: "about",
-  },
-  {
-    label: "Projetos",
-    id: "projects",
-  },
-  {
-    label: "Serviços",
-    id: "services",
-  },
-  {
-    label: "Contato",
-    id: "contact",
-  },
+export const navOptions: string[] = [
+  "about",
+  "projects",
+  "services",
+  "contact",
 ];
 
-const Header = () => {
+export const Header = () => {
+  const i18n = useTranslations("navigation");
+
   return (
     <header className="flex items-center justify-between w-full max-w-screen-xl mx-auto p-5 gap-3 lg:px-8">
       <div className="flex items-center gap-2 lg:gap-3">
@@ -46,13 +32,13 @@ const Header = () => {
       <div className="flex items-center gap-2 lg:gap-6">
         <nav className="max-lg:hidden">
           <ul className="flex items-center gap-6">
-            {navConfig.map(({ label, id }) => (
+            {navOptions.map((option) => (
               <li
-                key={label}
+                key={option}
                 className="transition-all cursor-pointer hover:underline hover:opacity-80 lg:text-[17px]"
-                onClick={() => smoothScrollToSection(id)}
+                onClick={() => smoothScrollToSection(option)}
               >
-                {label}
+                {i18n(option)}
               </li>
             ))}
           </ul>
@@ -65,5 +51,3 @@ const Header = () => {
     </header>
   );
 };
-
-export default Header;
