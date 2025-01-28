@@ -59,16 +59,19 @@ export const About = () => {
       <div className="w-full flex flex-col gap-6 lg:flex-row-reverse lg:gap-12">
         <div className="flex flex-col gap-y-4 lg:flex-1 lg:max-w-[560px] lg:items-center">
           <p className="font-light lg:text-lg">
-            Desenvolvedor Full Stack através das linguagens{" "}
-            <strong className="text-primary font-semibold">TypeScript</strong> e{" "}
-            <strong className="text-primary font-semibold">Java</strong>.
-            Profissional comunicativo e independente com mais de 1 ano na
+            Desenvolvedor de apliações Full Stack através de tecnologias como{" "}
+            <strong className="text-primary font-semibold">NextJS</strong>,{" "}
+            <strong className="text-primary font-semibold">NestJS</strong> e{" "}
+            <strong className="text-primary font-semibold">
+              Spring Framework
+            </strong>
+            . Profissional comunicativo e independente com mais de 1 ano na
             indústria do software.
           </p>
 
           <p className="font-light lg:text-lg">
-            Em busca do perfil generalista frontend e especialista backend.
-            Constantemente atualizado sobre as tecnologias mais{" "}
+            Habilidades de grande valor técnico e organizacional em frontend e
+            backend. Constantemente atualizado sobre as tecnologias mais{" "}
             <strong className="text-primary font-semibold">modernas</strong> e
             sempre pronto para{" "}
             <strong className="text-primary font-semibold">desafios</strong>.
