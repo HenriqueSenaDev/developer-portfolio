@@ -16,7 +16,7 @@ export const Contact = () => {
       className="flex flex-col items-center text-center my-8 px-5 gap-9 max-w-xl mx-auto lg:max-w-screen-xl lg:my-16 lg:gap-[42px]"
     >
       <h1 className="font-semibold text-lg min-[350px]:text-xl lg:text-4xl">
-        Gostou do que viu? Me deixe sabendo!
+        Gostou do que viu? Fale comigo!
       </h1>
 
       <div className="flex flex-wrap gap-4 min-[350px]:justify-center lg:max-w-[450px] lg:gap-5">

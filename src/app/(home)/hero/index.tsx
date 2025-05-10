@@ -48,9 +48,10 @@ export const Hero = () => {
         <div className="flex flex-wrap gap-x-3 gap-y-2 md:gap-5">
           <Button
             className="h-9 px-3 gap-[6px] text-[13px] transition-all hover:opacity-70 md:px-4 md:text-sm lg:h-11 lg:gap-3 lg:px-5 lg:text-base lg:rounded-lg"
-            onClick={() => smoothScrollToSection("services")}
+            onClick={() => smoothScrollToSection("projects")}
           >
-            <PickaxeIcon className="lg:!size-5" />O que posso construir
+            <PickaxeIcon className="lg:!size-5" />
+            Meus projetos
           </Button>
 
           <Button
@@ -59,7 +60,7 @@ export const Hero = () => {
             onClick={() => smoothScrollToSection("contact")}
           >
             <MessageSquareIcon />
-            Entre em contato
+            Fale comigo
           </Button>
         </div>
       </div>
