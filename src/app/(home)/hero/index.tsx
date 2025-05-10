@@ -38,7 +38,7 @@ export const Hero = () => {
             </h3>
           </div>
 
-          <p className="text-[13px] min-[370px]:text-[14.5px] font-light md:text-base lg:text-xl">
+          <p className="min-[370px]:text-[15px] font-light md:text-base lg:text-xl">
             Aprimore seu negócio com as funcionalidades mais modernas e
             sofisticadas do mercado com um desenvolvedor capacitado e
             independente.
