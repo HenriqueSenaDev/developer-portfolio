@@ -1,14 +1,13 @@
-"use client";
-
 import Image from "next/image";
 import heroImgSrc from "@/assets/images/hero-personal.png";
-import TextLoop from "react-text-loop";
 import { DMSansFontFamily } from "@/assets/fonts";
-import { Button } from "@/components/button";
-import { MessageSquareIcon, PickaxeIcon } from "lucide-react";
-import { smoothScrollToSection } from "@/utils/dom";
+import { useTranslations } from "next-intl";
+import { HeroTextLoop } from "./components/text-loop";
+import { HeroCtaArea } from "./components/cta";
 
 export const Hero = () => {
+  const i18n = useTranslations("hero");
+
   return (
     <section
       id="hero"
@@ -20,55 +19,36 @@ export const Hero = () => {
             className={`${DMSansFontFamily.className} font-bold leading-tight`}
           >
             <h1 className="text-xl min-[360px]:text-2xl min-[385px]:text-[26px] md:text-4xl lg:text-5xl">
-              Desenvolva com{" "}
-              <TextLoop className="text-primary" interval={3000}>
-                <strong>eficiência</strong>
-                <strong>inovação</strong>
-                <strong>confiança</strong>
-              </TextLoop>
+              {i18n("h1")}{" "}
+              <HeroTextLoop interval={3000} options={[
+                i18n("h1Completions.second"),
+                i18n("h1Completions.first"),
+                i18n("h1Completions.third"),
+              ]} />
             </h1>
 
             <h3 className="text-base min-[360px]:text-lg min-[385px]:text-xl md:text-2xl lg:text-4xl">
-              software{" "}
-              <TextLoop className="text-primary" interval={5000}>
-                <strong>de grande valor.</strong>
-                <strong>de qualidade.</strong>
-                <strong>performático.</strong>
-              </TextLoop>
+              {i18n("h2")}{" "}
+              <HeroTextLoop interval={3000} options={[
+                i18n("h2Completions.second"),
+                i18n("h2Completions.first"),
+                i18n("h2Completions.third"),
+              ]} />
             </h3>
           </div>
 
           <p className="min-[370px]:text-[15px] font-light md:text-base lg:text-xl">
-            Aprimore seu negócio com as funcionalidades mais modernas e
-            sofisticadas do mercado com um desenvolvedor capacitado e
-            independente.
+            {i18n("paragraph")}
           </p>
         </div>
 
-        <div className="flex flex-wrap gap-x-3 gap-y-2 md:gap-5">
-          <Button
-            className="h-9 px-3 gap-[6px] text-[13px] transition-all hover:opacity-70 md:px-4 md:text-sm lg:h-11 lg:gap-3 lg:px-5 lg:text-base lg:rounded-lg"
-            onClick={() => smoothScrollToSection("projects")}
-          >
-            <PickaxeIcon className="lg:!size-5" />
-            Meus projetos
-          </Button>
-
-          <Button
-            variant="secondary"
-            className="h-9 px-3 gap-[6px] text-[13px] transition-all md:px-4 md:text-sm lg:h-11 lg:gap-3 lg:px-5 lg:text-base lg:rounded-lg"
-            onClick={() => smoothScrollToSection("contact")}
-          >
-            <MessageSquareIcon />
-            Fale comigo
-          </Button>
-        </div>
+        <HeroCtaArea />
       </div>
 
       <Image
         priority
         className="w-full max-w-[232px] translate-y-[2px] h-auto mx-auto mt-8 md:max-w-[250px] lg:max-w-[300px] lg:mt-0"
-        alt="Desenvolvedor Luiz Henrique, jovem de cor branca com barba preta e cabelo castanho baixo, vestido com uma camisa branca e com as próprias mãos segurando uma na outra estendidas à frente do corpo como um sinal de confiança e negócios. No fundo, um retângulo cinza translúcido."
+        alt={i18n("developerImgAlt")}
         src={heroImgSrc}
       />
     </section>
