@@ -1,8 +1,27 @@
 {
+  "$schema": "./config.schema.json",
   "navigation": {
     "about": "About",
     "projects": "Projects",
-    "services": "Services",
+    "skills": "Skills",
     "contact": "Contact"
+  },
+  "hero": {
+    "h1": "Develop with",
+    "h1Completions": {
+      "first": "efficiency",
+      "second": "innovation",
+      "third": "trust"
+    },
+    "h2": "software of",
+    "h2Completions": {
+      "first": "great value.",
+      "second": "high-quality.",
+      "third": "high-performance."
+    },
+    "projectsCta": "My projects",
+    "contactCta": "Contact me",
+    "paragraph": "Enhance your business with the most modern and sophisticated features on the market, with a skilled and independent developer.",
+    "developerImgAlt": "Developer Luiz Henrique, a young white man with a black beard and short brown hair, wearing a white shirt and holding his own hands extended in front of his body as a sign of confidence and business. In the background, a translucent gray rectangle."
   }
 }

@@ -1,0 +1,105 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "properties": {
+        "hero": {
+            "properties": {
+                "contactCta": {
+                    "type": "string"
+                },
+                "developerImgAlt": {
+                    "type": "string"
+                },
+                "h1": {
+                    "type": "string"
+                },
+                "h1Completions": {
+                    "properties": {
+                        "first": {
+                            "type": "string"
+                        },
+                        "second": {
+                            "type": "string"
+                        },
+                        "third": {
+                            "type": "string"
+                        }
+                    },
+                    "required": [
+                        "first",
+                        "second",
+                        "third"
+                    ],
+                    "type": "object"
+                },
+                "h2": {
+                    "type": "string"
+                },
+                "h2Completions": {
+                    "properties": {
+                        "first": {
+                            "type": "string"
+                        },
+                        "second": {
+                            "type": "string"
+                        },
+                        "third": {
+                            "type": "string"
+                        }
+                    },
+                    "required": [
+                        "first",
+                        "second",
+                        "third"
+                    ],
+                    "type": "object"
+                },
+                "paragraph": {
+                    "type": "string"
+                },
+                "projectsCta": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "contactCta",
+                "developerImgAlt",
+                "h1",
+                "h1Completions",
+                "h2",
+                "h2Completions",
+                "paragraph",
+                "projectsCta"
+            ],
+            "type": "object"
+        },
+        "navigation": {
+            "properties": {
+                "about": {
+                    "type": "string"
+                },
+                "contact": {
+                    "type": "string"
+                },
+                "projects": {
+                    "type": "string"
+                },
+                "skills": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "about",
+                "contact",
+                "projects",
+                "skills"
+            ],
+            "type": "object"
+        }
+    },
+    "required": [
+        "hero",
+        "navigation"
+    ],
+    "type": "object"
+}
+

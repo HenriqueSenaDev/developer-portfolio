@@ -1,8 +1,27 @@
 {
+  "$schema": "./config.schema.json",
   "navigation": {
     "about": "Sobre",
     "projects": "Projetos",
     "skills": "Habilidades",
     "contact": "Contato"
+  },
+  "hero": {
+    "h1": "Desenvolva com",
+    "h1Completions": {
+      "first": "eficiência",
+      "second": "inovação",
+      "third": "confiança"
+    },
+    "h2": "software",
+    "h2Completions": {
+      "first": "de grande valor.",
+      "second": "de qualidade.",
+      "third": "performático."
+    },
+    "projectsCta": "Meus projetos",
+    "contactCta": "Fale comigo",
+    "paragraph": "Aprimore seu negócio com as funcionalidades mais modernas e sofisticadas do mercado com um desenvolvedor capacitado e independente.",
+    "developerImgAlt": "Desenvolvedor Luiz Henrique, jovem de cor branca com barba preta e cabelo castanho baixo, vestido com uma camisa branca e com as próprias mãos segurando uma na outra estendidas à frente do corpo como um sinal de confiança e negócios. No fundo, um retângulo cinza translúcido."
   }
 }
