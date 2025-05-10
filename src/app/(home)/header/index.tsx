@@ -9,7 +9,7 @@ import { useTranslations } from "next-intl";
 export const navOptions: string[] = [
   "about",
   "projects",
-  "services",
+  "skills",
   "contact",
 ];
 
