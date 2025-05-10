@@ -23,5 +23,43 @@
     "contactCta": "Contact me",
     "paragraph": "Enhance your business with the most modern and sophisticated features on the market, with a skilled and independent developer.",
     "developerImgAlt": "Developer Luiz Henrique, a young white man with a black beard and short brown hair, wearing a white shirt and holding his own hands extended in front of his body as a sign of confidence and business. In the background, a translucent gray rectangle."
+  },
+  "about": {
+    "aboutMe": {
+      "title": "About Me",
+      "paragraphs": {
+        "first": {
+          "text1": "Proactive and independent developer with",
+          "strong": " over 3 years of experience",
+          "text2": " building SaaS for the web."
+        },
+        "second": {
+          "strong1": "Effective communication",
+          "text1": " and",
+          "strong2": " leadership",
+          "text2": " in engineering applied through industry best practices."
+        },
+        "third": {
+          "text1": "Modern and efficient solutions driven by",
+          "strong1": " analytical thinking",
+          "text2": " and",
+          "strong2": " problem-solving",
+          "text3": " with continuous value delivery to the software product."
+        }
+      }
+    },
+    "background": {
+      "title": "Background",
+      "bulletPoints": {
+        "first": "Software Engineer at the Federal University of Ceará (UFC).",
+        "second": "IT Technician from a vocational school.",
+        "third": "Five-time national medalist in logical reasoning and mathematics.",
+        "fourth": "Scientific research in mathematics at the Institute for Pure and Applied Mathematics (IMPA)."
+      }
+    },
+    "stacks": {
+      "title": "Development Stacks"
+    },
+    "resumeDownload": "Download Resume (CV)"
   }
 }

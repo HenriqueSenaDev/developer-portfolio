@@ -23,5 +23,43 @@
     "contactCta": "Fale comigo",
     "paragraph": "Aprimore seu negócio com as funcionalidades mais modernas e sofisticadas do mercado com um desenvolvedor capacitado e independente.",
     "developerImgAlt": "Desenvolvedor Luiz Henrique, jovem de cor branca com barba preta e cabelo castanho baixo, vestido com uma camisa branca e com as próprias mãos segurando uma na outra estendidas à frente do corpo como um sinal de confiança e negócios. No fundo, um retângulo cinza translúcido."
+  },
+  "about": {
+    "aboutMe": {
+      "title": "Sobre mim",
+      "paragraphs": {
+        "first": {
+          "text1": "Desenvolvedor proativo e independente com",
+          "strong": " mais de 3 anos de experiência",
+          "text2": " na criação de SaaS para web."
+        },
+        "second": {
+          "strong1": "Comunicação efetiva",
+          "text1": " e",
+          "strong2": " liderança",
+          "text2": " na engenharia aplicada através das melhores práticas de mercado."
+        },
+        "third": {
+          "text1": "Soluções modernas e eficazes mediante",
+          "strong1": " raciocínio analítico",
+          "text2": " e",
+          "strong2": " resolução de problemas",
+          "text3": " com entrega contínua de valor ao produto de software."
+        }
+      }
+    },
+    "background": {
+      "title": "Histórico",
+      "bulletPoints": {
+        "first": "Engenheiro de Software pela federal do Ceará (UFC).",
+        "second": "Técnico em Informática por escola profissionalizante.",
+        "third": "Medalhista nacional em raciocínio lógico e matemática por 5 vezes.",
+        "fourth": "Iniciação científica em matemática pelo Instituto de Matemática Pura e Aplicada (INPA)."
+      }
+    },
+    "stacks": {
+      "title": "Stacks de desenvolvimento"
+    },
+    "resumeDownload": "Baicar Currículo (CV)"
   }
 }

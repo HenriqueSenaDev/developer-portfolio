@@ -1,6 +1,157 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "properties": {
+        "about": {
+            "properties": {
+                "aboutMe": {
+                    "properties": {
+                        "paragraphs": {
+                            "properties": {
+                                "first": {
+                                    "properties": {
+                                        "strong": {
+                                            "type": "string"
+                                        },
+                                        "text1": {
+                                            "type": "string"
+                                        },
+                                        "text2": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "required": [
+                                        "strong",
+                                        "text1",
+                                        "text2"
+                                    ],
+                                    "type": "object"
+                                },
+                                "second": {
+                                    "properties": {
+                                        "strong1": {
+                                            "type": "string"
+                                        },
+                                        "strong2": {
+                                            "type": "string"
+                                        },
+                                        "text1": {
+                                            "type": "string"
+                                        },
+                                        "text2": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "required": [
+                                        "strong1",
+                                        "strong2",
+                                        "text1",
+                                        "text2"
+                                    ],
+                                    "type": "object"
+                                },
+                                "third": {
+                                    "properties": {
+                                        "strong1": {
+                                            "type": "string"
+                                        },
+                                        "strong2": {
+                                            "type": "string"
+                                        },
+                                        "text1": {
+                                            "type": "string"
+                                        },
+                                        "text2": {
+                                            "type": "string"
+                                        },
+                                        "text3": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "required": [
+                                        "strong1",
+                                        "strong2",
+                                        "text1",
+                                        "text2",
+                                        "text3"
+                                    ],
+                                    "type": "object"
+                                }
+                            },
+                            "required": [
+                                "first",
+                                "second",
+                                "third"
+                            ],
+                            "type": "object"
+                        },
+                        "title": {
+                            "type": "string"
+                        }
+                    },
+                    "required": [
+                        "paragraphs",
+                        "title"
+                    ],
+                    "type": "object"
+                },
+                "background": {
+                    "properties": {
+                        "bulletPoints": {
+                            "properties": {
+                                "first": {
+                                    "type": "string"
+                                },
+                                "fourth": {
+                                    "type": "string"
+                                },
+                                "second": {
+                                    "type": "string"
+                                },
+                                "third": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "first",
+                                "fourth",
+                                "second",
+                                "third"
+                            ],
+                            "type": "object"
+                        },
+                        "title": {
+                            "type": "string"
+                        }
+                    },
+                    "required": [
+                        "bulletPoints",
+                        "title"
+                    ],
+                    "type": "object"
+                },
+                "resumeDownload": {
+                    "type": "string"
+                },
+                "stacks": {
+                    "properties": {
+                        "title": {
+                            "type": "string"
+                        }
+                    },
+                    "required": [
+                        "title"
+                    ],
+                    "type": "object"
+                }
+            },
+            "required": [
+                "aboutMe",
+                "background",
+                "resumeDownload",
+                "stacks"
+            ],
+            "type": "object"
+        },
         "hero": {
             "properties": {
                 "contactCta": {
@@ -97,6 +248,7 @@
         }
     },
     "required": [
+        "about",
         "hero",
         "navigation"
     ],

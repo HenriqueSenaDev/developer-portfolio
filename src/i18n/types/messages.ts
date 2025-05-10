@@ -23,4 +23,42 @@ export type Messages = {
     contactCta: string;
     developerImgAlt: string;
   },
+  about: {
+    aboutMe: {
+      title: string;
+      paragraphs: {
+        first: {
+          text1: string;
+          strong: string;
+          text2: string;
+        };
+        second: {
+          strong1: string;
+          text1: string;
+          strong2: string;
+          text2: string;
+        };
+        third: {
+          text1: string;
+          strong1: string;
+          text2: string;
+          strong2: string;
+          text3: string;
+        }
+      };
+    },
+    background: {
+      title: string;
+      bulletPoints: {
+        first: string;
+        second: string;
+        third: string;
+        fourth: string;
+      };
+    },
+    stacks: {
+      title: string;
+    },
+    resumeDownload: string;
+  }
 }
