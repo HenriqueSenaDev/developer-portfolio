@@ -10,6 +10,7 @@ import { LOCALE_COOKIE_KEY } from "@/config/cookies";
 import { GlobeIcon } from "lucide-react";
 import { useLocale } from "next-intl";
 import Cookies from "js-cookie";
+import { locales } from "@/i18n/locale";
 
 export const LanguageSelector = () => {
   const locale = useLocale();
@@ -32,9 +33,9 @@ export const LanguageSelector = () => {
       </SelectTrigger>
 
       <SelectContent>
-        <SelectItem value="pt-BR">pt-BR</SelectItem>
-
-        <SelectItem value="en">en</SelectItem>
+        {locales.map(item =>
+          <SelectItem key={item} value={item}>{item}</SelectItem>
+        )}
       </SelectContent>
     </Select>
   );
