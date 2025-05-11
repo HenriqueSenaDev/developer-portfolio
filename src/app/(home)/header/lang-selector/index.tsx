@@ -33,9 +33,11 @@ export const LanguageSelector = () => {
       </SelectTrigger>
 
       <SelectContent>
-        {locales.map(item =>
-          <SelectItem key={item} value={item}>{item}</SelectItem>
-        )}
+        {locales.map((item) => (
+          <SelectItem key={item} value={item}>
+            {item}
+          </SelectItem>
+        ))}
       </SelectContent>
     </Select>
   );

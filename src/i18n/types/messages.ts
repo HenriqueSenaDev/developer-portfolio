@@ -4,7 +4,7 @@ export type Messages = {
     projects: string;
     skills: string;
     contact: string;
-  },
+  };
   hero: {
     h1: string;
     h1Completions: {
@@ -22,7 +22,7 @@ export type Messages = {
     projectsCta: string;
     contactCta: string;
     developerImgAlt: string;
-  },
+  };
   about: {
     aboutMe: {
       title: string;
@@ -44,9 +44,9 @@ export type Messages = {
           text2: string;
           strong2: string;
           text3: string;
-        }
+        };
       };
-    },
+    };
     background: {
       title: string;
       bulletPoints: {
@@ -55,10 +55,10 @@ export type Messages = {
         third: string;
         fourth: string;
       };
-    },
+    };
     stacks: {
       title: string;
-    },
+    };
     resumeDownload: string;
-  }
-}
+  };
+};

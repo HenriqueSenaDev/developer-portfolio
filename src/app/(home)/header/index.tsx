@@ -6,12 +6,7 @@ import { smoothScrollToSection } from "@/utils/dom";
 import { MobileMenu } from "./mobile-menu";
 import { useTranslations } from "next-intl";
 
-export const navOptions = [
-  "about",
-  "projects",
-  "skills",
-  "contact",
-] as const;
+export const navOptions = ["about", "projects", "skills", "contact"] as const;
 
 export const Header = () => {
   const i18n = useTranslations("navigation");

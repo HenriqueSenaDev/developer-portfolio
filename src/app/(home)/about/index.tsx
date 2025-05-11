@@ -90,9 +90,7 @@ export const About = () => {
           <ul className="list-disc flex flex-col gap-y-2 pl-5">
             {backgroundList.map((item, index) => (
               <li key={index}>
-                <p className="font-light lg:text-lg lg:leading-6">
-                  {item}
-                </p>
+                <p className="font-light lg:text-lg lg:leading-6">{item}</p>
               </li>
             ))}
           </ul>
@@ -104,9 +102,7 @@ export const About = () => {
           <ul className="list-disc flex flex-col gap-y-2 pl-5">
             {stacksList.map((item, index) => (
               <li key={index}>
-                <p className="font-light lg:text-lg lg:leading-6">
-                  {item}
-                </p>
+                <p className="font-light lg:text-lg lg:leading-6">{item}</p>
               </li>
             ))}
           </ul>

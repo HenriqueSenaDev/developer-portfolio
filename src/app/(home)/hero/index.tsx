@@ -20,20 +20,26 @@ export const Hero = () => {
           >
             <h1 className="text-xl min-[360px]:text-2xl min-[385px]:text-[26px] md:text-4xl lg:text-5xl">
               {i18n("h1")}{" "}
-              <HeroTextLoop interval={3000} options={[
-                i18n("h1Completions.second"),
-                i18n("h1Completions.first"),
-                i18n("h1Completions.third"),
-              ]} />
+              <HeroTextLoop
+                interval={3000}
+                options={[
+                  i18n("h1Completions.second"),
+                  i18n("h1Completions.first"),
+                  i18n("h1Completions.third"),
+                ]}
+              />
             </h1>
 
             <h3 className="text-base min-[360px]:text-lg min-[385px]:text-xl md:text-2xl lg:text-4xl">
               {i18n("h2")}{" "}
-              <HeroTextLoop interval={3000} options={[
-                i18n("h2Completions.second"),
-                i18n("h2Completions.first"),
-                i18n("h2Completions.third"),
-              ]} />
+              <HeroTextLoop
+                interval={3000}
+                options={[
+                  i18n("h2Completions.second"),
+                  i18n("h2Completions.first"),
+                  i18n("h2Completions.third"),
+                ]}
+              />
             </h3>
           </div>
 

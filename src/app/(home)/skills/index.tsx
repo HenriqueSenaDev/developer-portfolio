@@ -6,9 +6,7 @@ export const Skills = () => {
       id="skills"
       className="bg-primary flex flex-col items-center pt-8 pb-12 gap-8 lg:pt-10 lg:pb-16 lg:gap-10"
     >
-      <h2 className="text-[44px] font-semibold lg:text-5xl">
-        Habilidades
-      </h2>
+      <h2 className="text-[44px] font-semibold lg:text-5xl">Habilidades</h2>
 
       <div className="w-full px-5 grid grid-cols-1 gap-6 max-w-xl lg:px-8 lg:max-w-screen-xl lg:grid-cols-[repeat(auto-fit,minmax(160px,1fr))] lg:gap-8">
         {skillCardsContent.map(({ title, description, Icon }, index) => (
