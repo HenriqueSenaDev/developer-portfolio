@@ -7,7 +7,6 @@ import { Contact } from "./contact";
 import { Footer } from "./footer";
 import { Skills } from "./skills";
 
-// TODO: projects image aspect-ratio, i18n.
 export default function Home() {
   return (
     <div className="min-h-screen pb-10">
