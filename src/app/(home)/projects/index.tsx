@@ -21,7 +21,7 @@ export const Projects = () => {
           <div key={project.name} className={bgClass}>
             <div className="flex flex-col py-[42px] px-5 gap-y-6 max-w-xl mx-auto lg:px-8 lg:max-w-screen-xl lg:flex-row lg:gap-x-10 lg:py-16 xl:lg:gap-x-12">
               <Image
-                className="block h-auto rounded-md lg:max-w-[calc(55%-56px)]"
+                className="w-full h-min rounded-md lg:max-w-[calc(55%-56px)]"
                 width={1845}
                 height={937}
                 src={project.images.thumb}

@@ -21,8 +21,8 @@
     },
     "projectsCta": "Meus projetos",
     "contactCta": "Fale comigo",
-    "paragraph": "Aprimore seu negócio com as funcionalidades mais modernas e sofisticadas do mercado com um desenvolvedor capacitado e independente.",
-    "developerImgAlt": "Desenvolvedor Luiz Henrique, jovem de cor branca com barba preta e cabelo castanho baixo, vestido com uma camisa branca e com as próprias mãos segurando uma na outra estendidas à frente do corpo como um sinal de confiança e negócios. No fundo, um retângulo cinza translúcido."
+    "paragraph": "Aprimore seu negócio com funcionalidades modernas e sofisticadas, contando com um desenvolvedor capacitado e independente.",
+    "developerImgAlt": "Desenvolvedor Luiz Henrique, jovem branco com barba preta e cabelo castanho curto, vestindo camisa branca. Está com as mãos unidas à frente do corpo, em sinal de confiança e profissionalismo. Ao fundo, um retângulo cinza translúcido."
   },
   "about": {
     "aboutMe": {
@@ -51,16 +51,16 @@
     "background": {
       "title": "Histórico",
       "bulletPoints": {
-        "first": "Engenheiro de Software pela federal do Ceará (UFC).",
+        "first": "Engenheiro de Software pela Universidade Federal do Ceará (UFC).",
         "second": "Técnico em Informática por escola profissionalizante.",
-        "third": "Medalhista nacional em raciocínio lógico e matemática por 5 vezes.",
-        "fourth": "Iniciação científica em matemática pelo Instituto de Matemática Pura e Aplicada (INPA)."
+        "third": "Medalhista nacional em raciocínio lógico e Matemática por 5 vezes.",
+        "fourth": "Iniciação científica em Matemática pelo Instituto de Matemática Pura e Aplicada (IMPA)."
       }
     },
     "stacks": {
       "title": "Stacks de desenvolvimento"
     },
-    "resumeDownload": "Baicar Currículo (CV)"
+    "resumeDownload": "Baixar Currículo (CV)"
   },
   "skills": {
     "title": "Habilidades",

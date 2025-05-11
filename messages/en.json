@@ -16,13 +16,13 @@
     "h2": "software of",
     "h2Completions": {
       "first": "great value.",
-      "second": "high-quality.",
-      "third": "high-performance."
+      "second": "high quality.",
+      "third": "high performance."
     },
     "projectsCta": "My projects",
     "contactCta": "Contact me",
     "paragraph": "Enhance your business with the most modern and sophisticated features on the market, with a skilled and independent developer.",
-    "developerImgAlt": "Developer Luiz Henrique, a young white man with a black beard and short brown hair, wearing a white shirt and holding his own hands extended in front of his body as a sign of confidence and business. In the background, a translucent gray rectangle."
+    "developerImgAlt": "Developer Luiz Henrique, a young white man with a black beard and short brown hair, wearing a white shirt and holding his hands together in front of him as a sign of confidence and professionalism. A translucent gray rectangle is in the background."
   },
   "about": {
     "aboutMe": {
@@ -54,7 +54,7 @@
         "first": "Software Engineer at the Federal University of Ceará (UFC).",
         "second": "IT Technician from a vocational school.",
         "third": "Five-time national medalist in logical reasoning and mathematics.",
-        "fourth": "Scientific research in mathematics at the Institute for Pure and Applied Mathematics (IMPA)."
+        "fourth": "Scientific initiation in Mathematics at the Institute for Pure and Applied Mathematics (IMPA)."
       }
     },
     "stacks": {
