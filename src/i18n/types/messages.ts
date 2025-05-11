@@ -61,4 +61,21 @@ export type Messages = {
     };
     resumeDownload: string;
   };
+  skills: {
+    title: string;
+    cards: {
+      first: {
+        title: string;
+        description: string;
+      };
+      second: {
+        title: string;
+        description: string;
+      };
+      third: {
+        title: string;
+        description: string;
+      };
+    };
+  };
 };

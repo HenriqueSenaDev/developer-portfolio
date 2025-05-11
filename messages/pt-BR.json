@@ -61,5 +61,22 @@
       "title": "Stacks de desenvolvimento"
     },
     "resumeDownload": "Baicar Currículo (CV)"
+  },
+  "skills": {
+    "title": "Habilidades",
+    "cards": {
+      "first": {
+        "title": "Integração de Software",
+        "description": "Integração entre diferentes sistemas proporcionando comunicação eficiente, automação de processos e interoperabilidade."
+      },
+      "second": {
+        "title": "Arquitetura de Software",
+        "description": "Definição de padrões, tecnologias e componentes para garantir soluções robustas, eficientes e alinhadas aos objetivos do negócio."
+      },
+      "third": {
+        "title": "Segurança",
+        "description": "Foco na proteção de dados, prevenção de vulnerabilidades e fortalecimento das estratégias de integridade."
+      }
+    }
   }
 }

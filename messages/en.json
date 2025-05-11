@@ -61,5 +61,22 @@
       "title": "Development Stacks"
     },
     "resumeDownload": "Download Resume (CV)"
+  },
+  "skills": {
+    "title": "Skills",
+    "cards": {
+      "first": {
+        "title": "Software Integration",
+        "description": "Integration between different systems enabling efficient communication, process automation, and interoperability."
+      },
+      "second": {
+        "title": "Software Architecture",
+        "description": "Definition of standards, technologies, and components to ensure robust, efficient solutions aligned with business goals."
+      },
+      "third": {
+        "title": "Security",
+        "description": "Focus on data protection, vulnerability prevention, and strengthening integrity strategies."
+      }
+    }
   }
 }
