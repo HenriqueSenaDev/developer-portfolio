@@ -79,6 +79,9 @@
       }
     }
   },
+  "projects": {
+    "visitCta": "Visitar"
+  },
   "contact": {
     "title": "Gostou do que viu? Fale comigo!"
   },

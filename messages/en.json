@@ -79,6 +79,9 @@
       }
     }
   },
+  "projects": {
+    "visitCta": "Visit"
+  },
   "contact": {
     "title": "Liked what you saw? Get in touch!"
   },

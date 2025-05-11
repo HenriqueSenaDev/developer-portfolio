@@ -78,6 +78,9 @@ export type Messages = {
       };
     };
   };
+  projects: {
+    visitCta: string;
+  };
   contact: {
     title: string;
   };

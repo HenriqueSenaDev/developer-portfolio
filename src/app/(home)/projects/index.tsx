@@ -1,10 +1,16 @@
+"use client";
+
 import { ExternalLinkIcon, GithubIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { techImgSrcMap } from "./techs-mapper";
 import { projects } from "./content";
+import { useLocale, useTranslations } from "next-intl";
 
 export const Projects = () => {
+  const locale = useLocale();
+  const i18n = useTranslations("projects");
+
   return (
     <section id="projects">
       {projects.map((project, index) => {
@@ -28,11 +34,11 @@ export const Projects = () => {
                 </h2>
 
                 <p className="text-base mt-4 lg:text-lg lg:leading-6">
-                  {project.description}
+                  {project.i18nInfo[locale].description}
                 </p>
 
                 <div className="flex items-center flex-wrap gap-3 mt-4 lg:mt-[18px]">
-                  {project.tags.map((tag) => (
+                  {project.i18nInfo[locale].tags.map((tag) => (
                     <div
                       key={tag}
                       className="flex items-center justify-center bg-white bg-opacity-[8%] rounded-md px-4 h-9"
@@ -62,7 +68,7 @@ export const Projects = () => {
                       <ExternalLinkIcon />
 
                       <span className="underline underline-offset-2">
-                        Visitar
+                        {i18n("visitCta")}
                       </span>
                     </Link>
                   )}

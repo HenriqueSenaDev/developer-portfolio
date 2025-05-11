@@ -1,9 +1,14 @@
+import { Locales } from "@/i18n/locale";
 import { Tech } from "@/types/techs";
 
-export type ProjectDetails = {
-  name: string;
+export type ProjectInfo = {
   description: string;
   tags: string[];
+};
+
+export type ProjectData = {
+  name: string;
+  i18nInfo: Record<Locales, ProjectInfo>;
   githubRepoURL: string;
   productionURL?: string;
   techs: Tech[];
@@ -12,14 +17,23 @@ export type ProjectDetails = {
   };
 };
 
-export const projects: ProjectDetails[] = [
+export const projects: ProjectData[] = [
   {
     name: "Mind Lab",
-    description:
-      "Plataforma virtual para o ensino de programação a pessoas com o Transtorno do Espectro Autista (TEA). Princípios neurocientíficos para metodologias de ensino eficazes.",
+    i18nInfo: {
+      "pt-BR": {
+        description:
+          "Plataforma virtual para o ensino de programação a pessoas com o Transtorno do Espectro Autista (TEA). Princípios neurocientíficos para metodologias de ensino eficazes.",
+        tags: ["theme switcher", "video player", "FAQ"],
+      },
+      en: {
+        description:
+          "Virtual platform for teaching programming to people with Autism Spectrum Disorder (ASD). Neuroscientific principles for effective teaching methodologies.",
+        tags: ["theme switcher", "video player", "FAQ"],
+      },
+    },
     githubRepoURL: "https://github.com/HenriqueSenaDev/mind-lab",
     productionURL: "https://mind-lab-frontend.vercel.app/personalization",
-    tags: ["theme switcher", "video player", "FAQ"],
     techs: ["typescript", "react", "vite"],
     images: {
       thumb:
