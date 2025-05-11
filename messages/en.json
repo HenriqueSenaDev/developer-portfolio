@@ -78,5 +78,11 @@
         "description": "Focus on data protection, vulnerability prevention, and strengthening integrity strategies."
       }
     }
+  },
+  "contact": {
+    "title": "Liked what you saw? Get in touch!"
+  },
+  "footer": {
+    "title": "All rights reserved."
   }
 }

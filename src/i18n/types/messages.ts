@@ -78,4 +78,10 @@ export type Messages = {
       };
     };
   };
+  contact: {
+    title: string;
+  };
+  footer: {
+    title: string;
+  };
 };

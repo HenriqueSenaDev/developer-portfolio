@@ -78,5 +78,11 @@
         "description": "Foco na proteção de dados, prevenção de vulnerabilidades e fortalecimento das estratégias de integridade."
       }
     }
+  },
+  "contact": {
+    "title": "Gostou do que viu? Fale comigo!"
+  },
+  "footer": {
+    "title": "Todos os direitos reservados."
   }
 }

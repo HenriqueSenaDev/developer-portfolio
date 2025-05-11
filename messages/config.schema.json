@@ -152,6 +152,28 @@
             ],
             "type": "object"
         },
+        "contact": {
+            "properties": {
+                "title": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "title"
+            ],
+            "type": "object"
+        },
+        "footer": {
+            "properties": {
+                "title": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "title"
+            ],
+            "type": "object"
+        },
         "hero": {
             "properties": {
                 "contactCta": {
@@ -316,6 +338,8 @@
     },
     "required": [
         "about",
+        "contact",
+        "footer",
         "hero",
         "navigation",
         "skills"

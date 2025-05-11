@@ -2,9 +2,12 @@
 
 import { Button } from "@/components/button";
 import { GithubIcon, LinkedinIcon, MailIcon } from "lucide-react";
+import { useTranslations } from "next-intl";
 import Link from "next/link";
 
 export const Contact = () => {
+  const i18n = useTranslations("contact");
+
   const handleCopyEmail = () => {
     navigator.clipboard.writeText("acopsenadeveloper@gmail.com");
     alert("Copiado para a clipboard.");
@@ -16,7 +19,7 @@ export const Contact = () => {
       className="flex flex-col items-center text-center my-8 px-5 gap-9 max-w-xl mx-auto md:max-w-screen-xl md:mt-10 md:gap-6"
     >
       <h1 className="font-semibold text-lg min-[350px]:text-xl md:text-3xl">
-        Gostou do que viu? Fale comigo!
+        {i18n("title")}
       </h1>
 
       <div className="flex flex-wrap gap-4 min-[350px]:justify-center md:max-w-[450px] md:gap-5">
