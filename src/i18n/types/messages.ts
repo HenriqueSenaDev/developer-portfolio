@@ -21,7 +21,6 @@ export type Messages = {
     paragraph: string;
     projectsCta: string;
     contactCta: string;
-    developerImgAlt: string;
   };
   about: {
     aboutMe: {
@@ -59,7 +58,6 @@ export type Messages = {
     stacks: {
       title: string;
     };
-    resumeDownload: string;
   };
   skills: {
     title: string;
@@ -79,7 +77,8 @@ export type Messages = {
     };
   };
   projects: {
-    visitCta: string;
+    title: string;
+    underConstruction: string;
   };
   contact: {
     title: string;

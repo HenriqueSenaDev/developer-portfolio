@@ -129,9 +129,6 @@
                     ],
                     "type": "object"
                 },
-                "resumeDownload": {
-                    "type": "string"
-                },
                 "stacks": {
                     "properties": {
                         "title": {
@@ -147,7 +144,6 @@
             "required": [
                 "aboutMe",
                 "background",
-                "resumeDownload",
                 "stacks"
             ],
             "type": "object"
@@ -177,9 +173,6 @@
         "hero": {
             "properties": {
                 "contactCta": {
-                    "type": "string"
-                },
-                "developerImgAlt": {
                     "type": "string"
                 },
                 "h1": {
@@ -235,7 +228,6 @@
             },
             "required": [
                 "contactCta",
-                "developerImgAlt",
                 "h1",
                 "h1Completions",
                 "h2",
@@ -270,12 +262,16 @@
         },
         "projects": {
             "properties": {
-                "visitCta": {
+                "title": {
+                    "type": "string"
+                },
+                "underConstruction": {
                     "type": "string"
                 }
             },
             "required": [
-                "visitCta"
+                "title",
+                "underConstruction"
             ],
             "type": "object"
         },

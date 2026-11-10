@@ -21,8 +21,7 @@
     },
     "projectsCta": "Meus projetos",
     "contactCta": "Fale comigo",
-    "paragraph": "Aprimore seu negócio com funcionalidades modernas e sofisticadas, contando com um desenvolvedor capacitado e independente.",
-    "developerImgAlt": "Desenvolvedor Luiz Henrique, jovem branco com barba preta e cabelo castanho curto, vestindo camisa branca. Está com as mãos unidas à frente do corpo, em sinal de confiança e profissionalismo. Ao fundo, um retângulo cinza translúcido."
+    "paragraph": "Aprimore seu negócio com funcionalidades modernas e sofisticadas, contando com um desenvolvedor capacitado e independente."
   },
   "about": {
     "aboutMe": {
@@ -59,8 +58,7 @@
     },
     "stacks": {
       "title": "Stacks de desenvolvimento"
-    },
-    "resumeDownload": "Baixar Currículo (CV)"
+    }
   },
   "skills": {
     "title": "Habilidades",
@@ -80,7 +78,8 @@
     }
   },
   "projects": {
-    "visitCta": "Visitar"
+    "title": "Projetos",
+    "underConstruction": "Em construção"
   },
   "contact": {
     "title": "Gostou do que viu? Fale comigo!"

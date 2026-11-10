@@ -21,8 +21,7 @@
     },
     "projectsCta": "My projects",
     "contactCta": "Contact me",
-    "paragraph": "Enhance your business with the most modern and sophisticated features on the market, with a skilled and independent developer.",
-    "developerImgAlt": "Developer Luiz Henrique, a young white man with a black beard and short brown hair, wearing a white shirt and holding his hands together in front of him as a sign of confidence and professionalism. A translucent gray rectangle is in the background."
+    "paragraph": "Enhance your business with the most modern and sophisticated features on the market, with a skilled and independent developer."
   },
   "about": {
     "aboutMe": {
@@ -59,8 +58,7 @@
     },
     "stacks": {
       "title": "Development Stacks"
-    },
-    "resumeDownload": "Download Resume (CV)"
+    }
   },
   "skills": {
     "title": "Skills",
@@ -80,7 +78,8 @@
     }
   },
   "projects": {
-    "visitCta": "Visit"
+    "title": "Projects",
+    "underConstruction": "Under construction"
   },
   "contact": {
     "title": "Liked what you saw? Get in touch!"
