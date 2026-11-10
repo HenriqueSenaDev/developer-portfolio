@@ -1,5 +1,8 @@
 {
   "$schema": "./config.schema.json",
+  "metadata": {
+    "description": "Luiz Sena é desenvolvedor de software e cria soluções para web, integrações e funcionalidades com agentes de IA e modelos de linguagem."
+  },
   "navigation": {
     "about": "Sobre",
     "projects": "Projetos",

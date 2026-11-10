@@ -1,4 +1,7 @@
 export type Messages = {
+  metadata: {
+    description: string;
+  };
   navigation: {
     about: string;
     projects: string;

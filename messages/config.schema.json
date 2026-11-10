@@ -237,6 +237,17 @@
             ],
             "type": "object"
         },
+        "metadata": {
+            "properties": {
+                "description": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "description"
+            ],
+            "type": "object"
+        },
         "navigation": {
             "properties": {
                 "about": {
@@ -348,6 +359,7 @@
         "contact",
         "footer",
         "hero",
+        "metadata",
         "navigation",
         "projects",
         "skills"
