@@ -3,7 +3,7 @@
   "navigation": {
     "about": "About",
     "projects": "Projects",
-    "skills": "Skills",
+    "skills": "Services",
     "contact": "Contact"
   },
   "hero": {
@@ -61,7 +61,7 @@
     }
   },
   "skills": {
-    "title": "Skills",
+    "title": "Services",
     "cards": {
       "first": {
         "title": "Software Integration",
@@ -72,8 +72,8 @@
         "description": "Definition of standards, technologies, and components to ensure robust, efficient solutions aligned with business goals."
       },
       "third": {
-        "title": "Security",
-        "description": "Focus on data protection, vulnerability prevention, and strengthening integrity strategies."
+        "title": "AI Engineering",
+        "description": "Building intelligent features with agents and large language models (LLMs), integrated into business products and processes."
       }
     }
   },

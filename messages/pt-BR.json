@@ -3,7 +3,7 @@
   "navigation": {
     "about": "Sobre",
     "projects": "Projetos",
-    "skills": "Habilidades",
+    "skills": "Serviços",
     "contact": "Contato"
   },
   "hero": {
@@ -61,7 +61,7 @@
     }
   },
   "skills": {
-    "title": "Habilidades",
+    "title": "Serviços",
     "cards": {
       "first": {
         "title": "Integração de Software",
@@ -72,8 +72,8 @@
         "description": "Definição de padrões, tecnologias e componentes para garantir soluções robustas, eficientes e alinhadas aos objetivos do negócio."
       },
       "third": {
-        "title": "Segurança",
-        "description": "Foco na proteção de dados, prevenção de vulnerabilidades e fortalecimento das estratégias de integridade."
+        "title": "AI Engineering",
+        "description": "Criação de funcionalidades inteligentes com agentes e modelos de linguagem (LLMs), integradas aos produtos e processos do negócio."
       }
     }
   },

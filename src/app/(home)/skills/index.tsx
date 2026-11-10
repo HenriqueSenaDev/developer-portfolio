@@ -1,5 +1,5 @@
 import { useTranslations } from "next-intl";
-import { LayersIcon, ShieldCheckIcon, WaypointsIcon } from "lucide-react";
+import { BotIcon, LayersIcon, WaypointsIcon } from "lucide-react";
 import { ReactNode } from "react";
 
 export type SkillCardContent = {
@@ -25,7 +25,7 @@ export const Skills = () => {
     {
       title: i18n("cards.third.title"),
       description: i18n("cards.third.description"),
-      Icon: () => <ShieldCheckIcon className="size-6 lg:size-7" />,
+      Icon: () => <BotIcon className="size-6 lg:size-7" />,
     },
   ];
 
