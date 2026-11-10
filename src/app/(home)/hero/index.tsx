@@ -1,5 +1,3 @@
-import Image from "next/image";
-import heroImgSrc from "@/assets/images/hero-personal.png";
 import { DMSansFontFamily } from "@/assets/fonts";
 import { useTranslations } from "next-intl";
 import { HeroTextLoop } from "./components/text-loop";
@@ -11,7 +9,7 @@ export const Hero = () => {
   return (
     <section
       id="hero"
-      className="flex flex-col px-5 mt-[22px] lg:flex-row lg:gap-5 lg:max-w-screen-xl lg:mx-auto lg:px-8"
+      className="flex flex-col px-5 mt-[22px] mb-10 lg:mb-16 lg:items-center lg:flex-row lg:gap-12 lg:max-w-screen-xl lg:mx-auto lg:px-8"
     >
       <div className="w-full flex flex-col gap-7 mx-auto max-w-xl lg:mx-0 lg:max-w-2xl lg:mt-10 lg:gap-8">
         <div className="flex flex-col gap-3 lg:gap-5">
@@ -51,12 +49,19 @@ export const Hero = () => {
         <HeroCtaArea />
       </div>
 
-      <Image
-        priority
-        className="w-full max-w-[232px] translate-y-[2px] h-auto mx-auto mt-8 md:max-w-[250px] lg:max-w-[300px] lg:mt-0"
-        alt={i18n("developerImgAlt")}
-        src={heroImgSrc}
-      />
+      <div
+        aria-hidden="true"
+        className="relative mx-auto mt-10 flex h-56 w-full max-w-sm items-center justify-center overflow-hidden rounded-2xl border border-white/10 bg-white/[0.03] md:h-64 lg:mt-0 lg:h-72 lg:flex-1"
+      >
+        <div className="absolute h-48 w-48 rounded-full bg-primary/20 blur-3xl" />
+        <div className="relative flex h-36 w-36 rotate-12 items-center justify-center rounded-3xl border border-tertiary/30 bg-background/80 shadow-[0_0_60px_rgba(0,132,214,0.15)] md:h-44 md:w-44">
+          <span className="-rotate-12 font-mono text-5xl font-light tracking-tight text-tertiary md:text-6xl">
+            &lt;/&gt;
+          </span>
+        </div>
+        <span className="absolute left-8 top-8 h-2 w-2 rounded-full bg-tertiary/60" />
+        <span className="absolute bottom-10 right-10 h-1.5 w-1.5 rounded-full bg-primary" />
+      </div>
     </section>
   );
 };

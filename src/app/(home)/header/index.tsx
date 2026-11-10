@@ -15,13 +15,10 @@ export const Header = () => {
     <header className="flex items-center justify-between w-full max-w-screen-xl mx-auto p-5 gap-3 lg:px-8">
       <div className="flex items-center gap-2 lg:gap-3">
         <RocketIcon
-          className="flex-shrink-0 size-5 lg:size-6"
+          className="size-5 flex-shrink-0 lg:size-6"
           strokeWidth={1.5}
         />
-
-        <span className="text-sm min-[360px]:text-base lg:text-xl">
-          Luiz Henrique Sena
-        </span>
+        <span className="text-lg font-medium lg:text-2xl">Luiz Sena</span>
       </div>
 
       <div className="flex items-center gap-2 lg:gap-6">
